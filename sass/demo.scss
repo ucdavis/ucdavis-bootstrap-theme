@@ -1,0 +1,30 @@
+@import "ucdavis";
+@mixin swatch-color($name, $color) {
+    &.#{$name} {
+        background-color: $color;
+    }
+}
+.swatches pre {
+    overflow: visible;
+    > code {
+        color: #e83e8c;
+    }
+}
+.swatch {   
+    width: 80px;
+    height: 80px;
+    display: block;
+    clear: both;
+    &.ucdavis-gold {
+        background-color: $ucdavis-gold;
+    }
+    &.ucdavis-blue {
+        background-color: $ucdavis-blue;
+    }
+    @each $name, $color in $primary-colors {
+        @include swatch-color($name, $color);
+    }
+    @each $name, $color in $muted-colors {
+        @include swatch-color($name, $color);
+    }
+}
