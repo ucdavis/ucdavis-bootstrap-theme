@@ -1,0 +1,87 @@
+.swatches pre {
+  overflow: visible;
+}
+
+.swatches pre > code {
+  color: #e83e8c;
+}
+
+.swatch {
+  width: 80px;
+  height: 80px;
+  display: block;
+  clear: both;
+}
+
+.swatch.ucdavis-gold {
+  background-color: #c99700;
+}
+
+.swatch.ucdavis-blue {
+  background-color: #002855;
+}
+
+.swatch.unitrans-red {
+  background-color: #ba0c2f;
+}
+
+.swatch.western-redbud {
+  background-color: #c6007e;
+}
+
+.swatch.california-poppy {
+  background-color: #ed8800;
+}
+
+.swatch.golden-lupine {
+  background-color: #ffcd00;
+}
+
+.swatch.sunny-grass {
+  background-color: #78be20;
+}
+
+.swatch.sky-blue {
+  background-color: #00b5e2;
+}
+
+.swatch.recpool-blue {
+  background-color: #008eaa;
+}
+
+.swatch.wine-grape {
+  background-color: #642667;
+}
+
+.swatch.mu-brick {
+  background-color: #c26e60;
+}
+
+.swatch.hart-stucco {
+  background-color: #e6a65d;
+}
+
+.swatch.sage-green {
+  background-color: #9caf88;
+}
+
+.swatch.evergreen {
+  background-color: #00573f;
+}
+
+.swatch.wintersky-gray {
+  background-color: #5b7f95;
+}
+
+.swatch.cenwalk-gray {
+  background-color: #b1b3b3;
+}
+
+.swatch.cork-oak {
+  background-color: #aca39a;
+}
+
+.swatch.shingle-brown {
+  background-color: #4f2c1d;
+}
+/*# sourceMappingURL=demo.css.map */

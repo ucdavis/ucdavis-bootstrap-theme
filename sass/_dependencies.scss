@@ -43,14 +43,6 @@
 		"wine-grape": $wine-grape
 	);
 
-	@each $name, $color in $primary-colors {
-		.text-#{$name} {
-			color: $color; 
-		}
-		.box-#{$name} {
-			background-color: color;
-		}
-	}
 	// Supplemental neutral color palette for UC Davis
 	$mu-brick:			#c26e60;
 	$harthall-stucco: 	#e6a65d;
@@ -61,7 +53,7 @@
 	$cork-oak:			#aca39a;
 	$shingle-brown:		#4f2c1d;
 
-	$muted-color: (
+	$muted-colors: (
 		"mu-brick": $mu-brick,
 		"hart-stucco": $harthall-stucco,
 		"sage-green": $sage-green,
