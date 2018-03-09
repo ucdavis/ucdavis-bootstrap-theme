@@ -1433,7 +1433,59 @@ a.prettyinpink {
   border: none;
   padding-left: 0;
   padding: 0;
-  border-left: 1em solid #002855;
+  border: 1em solid #002855;
+}
+
+.img-thumbnail:not(.img-thumbnail-right):not(.img-thumbnail-top):not(.img-thumbnail-bottom) {
+  border-width: 0 0 0 1em;
+}
+
+.img-thumbnail-left {
+  border-width: 0 0 0 1em;
+}
+
+.img-thumbnail-top {
+  border-width: 1em 0 0 0;
+}
+
+.img-thumbnail-right {
+  border-width: 0 0 1em 0;
+}
+
+.img-thumbnail-bottom {
+  border-width: 0 0 0 1em;
+}
+
+.img-thumbnail.unitrans-red {
+  border-color: #ba0c2f;
+}
+
+.img-thumbnail.western-redbud {
+  border-color: #c6007e;
+}
+
+.img-thumbnail.california-poppy {
+  border-color: #ed8800;
+}
+
+.img-thumbnail.golden-lupine {
+  border-color: #ffcd00;
+}
+
+.img-thumbnail.sunny-grass {
+  border-color: #78be20;
+}
+
+.img-thumbnail.sky-blue {
+  border-color: #00b5e2;
+}
+
+.img-thumbnail.recpool-blue {
+  border-color: #008eaa;
+}
+
+.img-thumbnail.wine-grape {
+  border-color: #642667;
 }
 
 .swatches pre {
