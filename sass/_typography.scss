@@ -5,12 +5,12 @@
         clip-path: polygon(
             0 0,
             100% 0,
-            90% 100%,
+            calc(100% - 1.25em) 100%,
             0% 100%
         );
         padding-bottom: 1em;
         padding-top: 1em;
-        padding-right: calc(1em + 20%);
+        padding-right: calc(1em + 1.25em);
         padding-left: 1em;
         display: inline-block;
         width: auto;
