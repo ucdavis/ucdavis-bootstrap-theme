@@ -1,0 +1,23 @@
+.page-header {
+    position: relative;
+}
+%underline {
+    &:after{
+        display: block;
+        border-top: 3px solid #daaa00;
+        margin: .25em 0 1em;
+        width: 1.25em;
+        content: "";
+    }
+}
+.underline {
+    @extend %underline;
+}
+@each $name, $color in $primary-colors {
+    .underline-#{$name} {
+        @extend %underline;
+        &:after {
+            border-top-color: $color;
+        }
+    }
+}

@@ -30,3 +30,14 @@
         @include swatch-color($name, $color);
     }
 }
+section {
+    margin-bottom: 5em;
+}
+
+.example {
+    border:2px solid #eeeeee;
+    padding-left: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
