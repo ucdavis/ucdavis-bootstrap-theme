@@ -1319,6 +1319,10 @@
   background-color: #f60334;
 }
 
+.btn-link, .btn-link:hover, .btn-link:focus, .btn-link.focus {
+  border: 1px solid #DADADA;
+}
+
 .swatches pre {
   overflow: visible !important;
 }
