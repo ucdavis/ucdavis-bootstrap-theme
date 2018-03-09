@@ -24,7 +24,7 @@
 .btn {
     &:focus,
     &.focus {
-        box-shadow: none;
+        box-shadow: none !important;
     }
     border-radius: 0;
     padding-top: 0.5em;
