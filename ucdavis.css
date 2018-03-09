@@ -1,4 +1,8 @@
 .page-header > *, .page-header-unitrans-red > *, .page-header-western-redbud > *, .page-header-california-poppy > *, .page-header-golden-lupine > *, .page-header-sunny-grass > *, .page-header-sky-blue > *, .page-header-recpool-blue > *, .page-header-wine-grape > *, .page-header-mu-brick > *, .page-header-hart-stucco > *, .page-header-sage-green > *, .page-header-evergreen > *, .page-header-wintersky-gray > *, .page-header-cenwalk-gray > *, .page-header-cork-oak > *, .page-header-shingle-brown > * {
+  display: inline-block;
+}
+
+.page-header > *:first-child, .page-header-unitrans-red > *:first-child, .page-header-western-redbud > *:first-child, .page-header-california-poppy > *:first-child, .page-header-golden-lupine > *:first-child, .page-header-sunny-grass > *:first-child, .page-header-sky-blue > *:first-child, .page-header-recpool-blue > *:first-child, .page-header-wine-grape > *:first-child, .page-header-mu-brick > *:first-child, .page-header-hart-stucco > *:first-child, .page-header-sage-green > *:first-child, .page-header-evergreen > *:first-child, .page-header-wintersky-gray > *:first-child, .page-header-cenwalk-gray > *:first-child, .page-header-cork-oak > *:first-child, .page-header-shingle-brown > *:first-child {
   background-color: #002855;
   color: white;
   clip-path: polygon(0 0, 100% 0, calc(100% - 1.25em) 100%, 0% 100%);
@@ -6,7 +10,6 @@
   padding-top: 1em;
   padding-right: calc(1em + 1.25em);
   padding-left: 1em;
-  display: inline-block;
   width: auto;
 }
 
