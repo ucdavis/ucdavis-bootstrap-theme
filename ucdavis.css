@@ -1,8 +1,96 @@
-.page-header {
-  position: relative;
+.page-header > *, .page-header-unitrans-red > *, .page-header-western-redbud > *, .page-header-california-poppy > *, .page-header-golden-lupine > *, .page-header-sunny-grass > *, .page-header-sky-blue > *, .page-header-recpool-blue > *, .page-header-wine-grape > *, .page-header-mu-brick > *, .page-header-hart-stucco > *, .page-header-sage-green > *, .page-header-evergreen > *, .page-header-wintersky-gray > *, .page-header-cenwalk-gray > *, .page-header-cork-oak > *, .page-header-shingle-brown > * {
+  background-color: #002855;
+  color: white;
+  clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+  padding-bottom: 1em;
+  padding-top: 1em;
+  padding-right: calc(1em + 20%);
+  padding-left: 1em;
+  display: inline-block;
+  width: auto;
 }
 
-.underline:after, .underline-unitrans-red:after, .underline-western-redbud:after, .underline-california-poppy:after, .underline-golden-lupine:after, .underline-sunny-grass:after, .underline-sky-blue:after, .underline-recpool-blue:after, .underline-wine-grape:after {
+.page-header-unitrans-red {
+  background-color: #ba0c2f;
+  color: #fff;
+}
+
+.page-header-western-redbud {
+  background-color: #c6007e;
+  color: #fff;
+}
+
+.page-header-california-poppy {
+  background-color: #ed8800;
+  color: #212529;
+}
+
+.page-header-golden-lupine {
+  background-color: #ffcd00;
+  color: #212529;
+}
+
+.page-header-sunny-grass {
+  background-color: #78be20;
+  color: #212529;
+}
+
+.page-header-sky-blue {
+  background-color: #00b5e2;
+  color: #fff;
+}
+
+.page-header-recpool-blue {
+  background-color: #008eaa;
+  color: #fff;
+}
+
+.page-header-wine-grape {
+  background-color: #642667;
+  color: #fff;
+}
+
+.page-header-mu-brick {
+  background-color: #c26e60;
+  color: #fff;
+}
+
+.page-header-hart-stucco {
+  background-color: #e6a65d;
+  color: #212529;
+}
+
+.page-header-sage-green {
+  background-color: #9caf88;
+  color: #212529;
+}
+
+.page-header-evergreen {
+  background-color: #00573f;
+  color: #fff;
+}
+
+.page-header-wintersky-gray {
+  background-color: #5b7f95;
+  color: #fff;
+}
+
+.page-header-cenwalk-gray {
+  background-color: #b1b3b3;
+  color: #212529;
+}
+
+.page-header-cork-oak {
+  background-color: #aca39a;
+  color: #212529;
+}
+
+.page-header-shingle-brown {
+  background-color: #4f2c1d;
+  color: #fff;
+}
+
+.underline:after, .underline-unitrans-red:after, .underline-western-redbud:after, .underline-california-poppy:after, .underline-golden-lupine:after, .underline-sunny-grass:after, .underline-sky-blue:after, .underline-recpool-blue:after, .underline-wine-grape:after, .underline-mu-brick:after, .underline-hart-stucco:after, .underline-sage-green:after, .underline-evergreen:after, .underline-wintersky-gray:after, .underline-cenwalk-gray:after, .underline-cork-oak:after, .underline-shingle-brown:after {
   display: block;
   border-top: 3px solid #daaa00;
   margin: .25em 0 1em;
@@ -40,6 +128,38 @@
 
 .underline-wine-grape:after {
   border-top-color: #642667;
+}
+
+.underline-mu-brick:after {
+  border-top-color: #c26e60;
+}
+
+.underline-hart-stucco:after {
+  border-top-color: #e6a65d;
+}
+
+.underline-sage-green:after {
+  border-top-color: #9caf88;
+}
+
+.underline-evergreen:after {
+  border-top-color: #00573f;
+}
+
+.underline-wintersky-gray:after {
+  border-top-color: #5b7f95;
+}
+
+.underline-cenwalk-gray:after {
+  border-top-color: #b1b3b3;
+}
+
+.underline-cork-oak:after {
+  border-top-color: #aca39a;
+}
+
+.underline-shingle-brown:after {
+  border-top-color: #4f2c1d;
 }
 
 .btn-unitrans-red {
