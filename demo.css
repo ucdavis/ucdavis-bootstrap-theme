@@ -1392,6 +1392,42 @@ a.prettyinpink {
   border: 1px solid #DADADA;
 }
 
+.alert-primary {
+  background-color: #063469;
+  border-color: #074081;
+  color: #a1b5cc;
+}
+
+.alert-secondary {
+  background-color: #e0bc4f;
+  border-color: #d6aa26;
+  color: #645119;
+}
+
+.alert-info {
+  background-color: #9be7fa;
+  border-color: #6adbf7;
+  color: #17a7cb;
+}
+
+.alert-success {
+  background-color: #a3d169;
+  border-color: #8bc542;
+  color: #476126;
+}
+
+.alert-warning {
+  background-color: #ffdf5c;
+  border-color: #ffce05;
+  color: #6f5b06;
+}
+
+.alert-danger {
+  background-color: #ed728a;
+  border-color: #eb5b78;
+  color: #661424;
+}
+
 .swatches pre {
   overflow: visible !important;
 }

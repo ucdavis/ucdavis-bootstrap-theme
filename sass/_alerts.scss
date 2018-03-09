@@ -1,0 +1,38 @@
+$secondary-alert: desaturate(lighten($ucdavis-gold, 20%), 30%);
+$primary-alert: desaturate(lighten($ucdavis-blue, 5%), 10%);
+$success-alert: desaturate(lighten($sunny-grass,18%), 18%);
+$warning-alert: desaturate(lighten($golden-lupine,18%), 0%);
+$info-alert: desaturate(lighten($sky-blue,35%), 10%);
+$danger-alert: desaturate(lighten($unitrans-red, 30%), 10%);
+
+.alert-primary {
+    background-color: $primary-alert;
+    border-color: lighten($primary-alert, 5%);
+    color: lighten(desaturate($color: $primary-alert, $amount: 60%), 50%);
+}
+.alert-secondary {
+    background-color: $secondary-alert;
+    border-color: darken($secondary-alert, 10%);
+    color: darken(desaturate($color: $secondary-alert, $amount: 10%), 35%);
+}
+.alert-info {
+    background-color: $info-alert;
+    border-color: darken($info-alert, 10%);
+    color: darken(desaturate($color: $info-alert, $amount: 10%), 35%);
+}   
+.alert-success {
+    background-color: $success-alert;
+    border-color: darken($success-alert, 10%);
+    color: darken(desaturate($color: $success-alert, $amount: 10%), 35%);
+}   
+.alert-warning {
+    background-color: $warning-alert;
+    border-color: darken($warning-alert, 17%);
+    color: darken(desaturate($color: $warning-alert, $amount: 10%), 45%);
+}
+
+.alert-danger {
+    background-color: $danger-alert;
+    border-color: darken($danger-alert, 5%);
+    color: darken(desaturate($color: $danger-alert, $amount: 10%), 45%);
+}
