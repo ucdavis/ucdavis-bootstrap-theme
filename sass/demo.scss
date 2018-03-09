@@ -5,9 +5,11 @@
     }
 }
 .swatches pre {
-    overflow: visible;
+    overflow: visible !important;
     > code {
         color: #e83e8c;
+        overflow: visible !important;
+        background: transparent !important;
     }
 }
 .swatch {   

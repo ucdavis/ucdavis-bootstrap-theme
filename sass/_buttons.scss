@@ -1,0 +1,73 @@
+@import "mixins/buttons";
+@mixin bootstrap-button-color($color, $value) {
+    .btn-#{$color} {
+        @include button-variant($value, $value);
+    }
+    .btn-outline-#{$color} {
+        @include button-outline-variant($value);
+    }
+}
+// for primary, secondary, info, success, warning, danger only
+@mixin button-color($color) {
+    background-color: $color;
+    border-color: $color;
+    color: white;
+}
+
+@each $color, $value in $primary-colors {
+    @include bootstrap-button-color($color, $value);
+}
+  
+@each $color, $value in $muted-colors {
+    @include bootstrap-button-color($color, $value);
+}
+.btn {
+    &:focus,
+    &.focus {
+        box-shadow: none;
+    }
+    border-radius: 0;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.btn-primary {
+    @include button-color($ucdavis-blue);
+    @include hover {
+        background-color: desaturate($color: lighten($color: $ucdavis-blue, $amount: 20%), $amount: 50%);
+    }
+}
+
+.btn-secondary {
+    @include button-color($ucdavis-gold);
+}
+
+.btn-success {
+    @include button-color($sunny-grass);
+    @include hover {
+        background-color: saturate($color: darken($color: $sunny-grass, $amount: 5%), $amount: 10%);
+    }
+}
+
+.btn-info {
+    @include button-color($sky-blue);
+    @include hover {
+        background-color: desaturate($color: lighten($color: $sky-blue, $amount: 10%), $amount: 50%);
+    }
+}
+
+.btn-warning {
+    @include button-color($golden-lupine);
+    color: black;
+    @include hover {
+        background-color: saturate($color: lighten($color: $golden-lupine, $amount: 10%), $amount: 20%);
+    }
+}
+
+.btn-danger {
+    @include button-color($unitrans-red);
+    @include hover {
+        background-color: saturate($color: lighten($color: $unitrans-red, $amount: 10%), $amount: 10%);
+    }
+}

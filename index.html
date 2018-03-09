@@ -13,7 +13,8 @@
 
     <!-- Bootstrap core CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
-
+    <link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
     <!-- Custom styles for this template -->
     <link href="ucdavis.css" rel="stylesheet">
     <link href="demo.css" rel="stylesheet">
@@ -274,6 +275,7 @@ Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit no
       <div class="page-header">
         <h1>Buttons</h1>
       </div>
+      <h2>Large</h2>
       <p>
         <button type="button" class="btn btn-lg btn-default">Default</button>
         <button type="button" class="btn btn-lg btn-primary">Primary</button>
@@ -283,6 +285,7 @@ Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit no
         <button type="button" class="btn btn-lg btn-danger">Danger</button>
         <button type="button" class="btn btn-lg btn-link">Link</button>
       </p>
+      <h2>Normal</h2>
       <p>
         <button type="button" class="btn btn-default">Default</button>
         <button type="button" class="btn btn-primary">Primary</button>
@@ -292,6 +295,7 @@ Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit no
         <button type="button" class="btn btn-danger">Danger</button>
         <button type="button" class="btn btn-link">Link</button>
       </p>
+      <h2>Small</h2>
       <p>
         <button type="button" class="btn btn-sm btn-default">Default</button>
         <button type="button" class="btn btn-sm btn-primary">Primary</button>
@@ -301,16 +305,38 @@ Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit no
         <button type="button" class="btn btn-sm btn-danger">Danger</button>
         <button type="button" class="btn btn-sm btn-link">Link</button>
       </p>
-      <p>
-        <button type="button" class="btn btn-xs btn-default">Default</button>
-        <button type="button" class="btn btn-xs btn-primary">Primary</button>
-        <button type="button" class="btn btn-xs btn-success">Success</button>
-        <button type="button" class="btn btn-xs btn-info">Info</button>
-        <button type="button" class="btn btn-xs btn-warning">Warning</button>
-        <button type="button" class="btn btn-xs btn-danger">Danger</button>
-        <button type="button" class="btn btn-xs btn-link">Link</button>
-      </p>
-
+      <pre>
+        <code>&lth2&gtLarge&lt/h2&gt
+  &ltp&gt
+    &ltbutton type="button" class="btn btn-lg btn-default"&gtDefault&lt/button&gt
+    &ltbutton type="button" class="btn btn-lg btn-primary"&gtPrimary&lt/button&gt
+    &ltbutton type="button" class="btn btn-lg btn-success"&gtSuccess&lt/button&gt
+    &ltbutton type="button" class="btn btn-lg btn-info"&gtInfo&lt/button&gt
+    &ltbutton type="button" class="btn btn-lg btn-warning"&gtWarning&lt/button&gt
+    &ltbutton type="button" class="btn btn-lg btn-danger"&gtDanger&lt/button&gt
+    &ltbutton type="button" class="btn btn-lg btn-link"&gtLink&lt/button&gt
+  &lt/p&gt
+  &lth2&gtNormal&lt/h2&gt
+  &ltp&gt
+    &ltbutton type="button" class="btn btn-default"&gtDefault&lt/button&gt
+    &ltbutton type="button" class="btn btn-primary"&gtPrimary&lt/button&gt
+    &ltbutton type="button" class="btn btn-success"&gtSuccess&lt/button&gt
+    &ltbutton type="button" class="btn btn-info"&gtInfo&lt/button&gt
+    &ltbutton type="button" class="btn btn-warning"&gtWarning&lt/button&gt
+    &ltbutton type="button" class="btn btn-danger"&gtDanger&lt/button&gt
+    &ltbutton type="button" class="btn btn-link"&gtLink&lt/button&gt
+  &lt/p&gt
+  &lth2&gtSmall&lt/h2&gt
+  &ltp&gt
+    &ltbutton type="button" class="btn btn-sm btn-default"&gtDefault&lt/button&gt
+    &ltbutton type="button" class="btn btn-sm btn-primary"&gtPrimary&lt/button&gt
+    &ltbutton type="button" class="btn btn-sm btn-success"&gtSuccess&lt/button&gt
+    &ltbutton type="button" class="btn btn-sm btn-info"&gtInfo&lt/button&gt
+    &ltbutton type="button" class="btn btn-sm btn-warning"&gtWarning&lt/button&gt
+    &ltbutton type="button" class="btn btn-sm btn-danger"&gtDanger&lt/button&gt
+    &ltbutton type="button" class="btn btn-sm btn-link"&gtLink&lt/button&gt
+  &lt/p&gt</code>
+      </pre>
 
 
       <div class="page-header">
@@ -502,5 +528,8 @@ Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit no
 
     </div> <!-- /container -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
   </body>
 </html>
