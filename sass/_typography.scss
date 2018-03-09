@@ -87,7 +87,7 @@ a.prettyinpink {
 }
 
 @each $name, $color in $muted-colors {
-    .page-header-#{$name} {
+    .page-header.#{$name} {
         @extend %page-header-common;
         background-color: $color;
         color: color-yiq($color);
@@ -114,14 +114,14 @@ a.prettyinpink {
 }
 
 @each $name, $color in $primary-colors {
-    .underline-#{$name} {
+    .underline.#{$name} {
         @extend %underline;
         @include underline-color($color);
     }
 }
 
 @each $name, $color in $muted-colors {
-    .underline-#{$name} {
+    .underline.#{$name} {
         @extend %underline;
         @include underline-color($color);
     }

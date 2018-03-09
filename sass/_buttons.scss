@@ -1,9 +1,9 @@
 @import "mixins/buttons";
 @mixin bootstrap-button-color($color, $value) {
-    .btn-#{$color} {
+    .btn.#{$color} {
         @include button-variant($value, $value);
     }
-    .btn-outline-#{$color} {
+    .btn-outline.#{$color} {
         @include button-outline-variant($value);
     }
 }
