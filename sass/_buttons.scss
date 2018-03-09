@@ -71,3 +71,7 @@
         background-color: saturate($color: lighten($color: $unitrans-red, $amount: 10%), $amount: 10%);
     }
 }
+
+.btn-link, .btn-link:hover, .btn-link:focus, .btn-link.focus {
+    border: 1px solid #DADADA;
+}
