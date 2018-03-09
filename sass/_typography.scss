@@ -53,7 +53,7 @@ a.prettyinpink {
 	}
 }
 
-%page-header-common {
+.page-header {
     > * {
         &:first-child {
             background-color: $ucdavis-blue;
@@ -74,13 +74,8 @@ a.prettyinpink {
     }
 }
 
-.page-header {
-    @extend %page-header-common;
-}
-
 @each $name, $color in $primary-colors {
-    .page-header-#{$name} {
-        @extend %page-header-common;
+    .page-header.#{$name} {
         background-color: $color;
         color: color-yiq($color);
     }
@@ -88,13 +83,12 @@ a.prettyinpink {
 
 @each $name, $color in $muted-colors {
     .page-header.#{$name} {
-        @extend %page-header-common;
         background-color: $color;
         color: color-yiq($color);
     }
 }
 
-%underline {
+.underline {
     &:after{
         display: block;
         border-top: 3px solid #daaa00;
@@ -102,9 +96,6 @@ a.prettyinpink {
         width: 1.25em;
         content: "";
     }
-}
-.underline {
-    @extend %underline;
 }
 
 @mixin underline-color($color) {
@@ -115,14 +106,12 @@ a.prettyinpink {
 
 @each $name, $color in $primary-colors {
     .underline.#{$name} {
-        @extend %underline;
         @include underline-color($color);
     }
 }
 
 @each $name, $color in $muted-colors {
     .underline.#{$name} {
-        @extend %underline;
         @include underline-color($color);
     }
 }

@@ -64,11 +64,11 @@ a.prettyinpink {
   color: #cc6699;
 }
 
-.page-header > *, .page-header-unitrans-red > *, .page-header-western-redbud > *, .page-header-california-poppy > *, .page-header-golden-lupine > *, .page-header-sunny-grass > *, .page-header-sky-blue > *, .page-header-recpool-blue > *, .page-header-wine-grape > *, .page-header.mu-brick > *, .page-header.hart-stucco > *, .page-header.sage-green > *, .page-header.evergreen > *, .page-header.wintersky-gray > *, .page-header.cenwalk-gray > *, .page-header.cork-oak > *, .page-header.shingle-brown > * {
+.page-header > * {
   display: inline-block;
 }
 
-.page-header > *:first-child, .page-header-unitrans-red > *:first-child, .page-header-western-redbud > *:first-child, .page-header-california-poppy > *:first-child, .page-header-golden-lupine > *:first-child, .page-header-sunny-grass > *:first-child, .page-header-sky-blue > *:first-child, .page-header-recpool-blue > *:first-child, .page-header-wine-grape > *:first-child {
+.page-header > *:first-child {
   background-color: #002855;
   color: white;
   clip-path: polygon(0 0, 100% 0, calc(100% - 1.25em) 100%, 0% 100%);
@@ -79,42 +79,42 @@ a.prettyinpink {
   width: auto;
 }
 
-.page-header-unitrans-red {
+.page-header.unitrans-red {
   background-color: #ba0c2f;
   color: #fff;
 }
 
-.page-header-western-redbud {
+.page-header.western-redbud {
   background-color: #c6007e;
   color: #fff;
 }
 
-.page-header-california-poppy {
+.page-header.california-poppy {
   background-color: #ed8800;
   color: #212529;
 }
 
-.page-header-golden-lupine {
+.page-header.golden-lupine {
   background-color: #ffcd00;
   color: #212529;
 }
 
-.page-header-sunny-grass {
+.page-header.sunny-grass {
   background-color: #78be20;
   color: #212529;
 }
 
-.page-header-sky-blue {
+.page-header.sky-blue {
   background-color: #00b5e2;
   color: #fff;
 }
 
-.page-header-recpool-blue {
+.page-header.recpool-blue {
   background-color: #008eaa;
   color: #fff;
 }
 
-.page-header-wine-grape {
+.page-header.wine-grape {
   background-color: #642667;
   color: #fff;
 }
@@ -159,7 +159,7 @@ a.prettyinpink {
   color: #fff;
 }
 
-.underline:after, .underline.unitrans-red:after, .underline.western-redbud:after, .underline.california-poppy:after, .underline.golden-lupine:after, .underline.sunny-grass:after, .underline.sky-blue:after, .underline.recpool-blue:after, .underline.wine-grape:after, .underline.mu-brick:after, .underline.hart-stucco:after, .underline.sage-green:after, .underline.evergreen:after, .underline.wintersky-gray:after, .underline.cenwalk-gray:after, .underline.cork-oak:after, .underline.shingle-brown:after {
+.underline:after {
   display: block;
   border-top: 3px solid #daaa00;
   margin: .25em 0 1em;
