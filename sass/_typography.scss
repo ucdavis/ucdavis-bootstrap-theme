@@ -1,6 +1,42 @@
-.page-header {
-    position: relative;
+%page-header-common {
+    > * {
+        background-color: $ucdavis-blue;
+        color: white;
+        clip-path: polygon(
+            0 0,
+            100% 0,
+            90% 100%,
+            0% 100%
+        );
+        padding-bottom: 1em;
+        padding-top: 1em;
+        padding-right: calc(1em + 20%);
+        padding-left: 1em;
+        display: inline-block;
+        width: auto;
+    }
 }
+
+.page-header {
+    @extend %page-header-common;
+}
+
+@each $name, $color in $primary-colors {
+    .page-header-#{$name} {
+        @extend %page-header-common;
+        background-color: $color;
+        color: color-yiq($color);
+    }
+}
+
+@each $name, $color in $muted-colors {
+    .page-header-#{$name} {
+        @extend %page-header-common;
+        background-color: $color;
+        color: color-yiq($color);
+    }
+}
+
 %underline {
     &:after{
         display: block;
@@ -13,11 +49,23 @@
 .underline {
     @extend %underline;
 }
+
+@mixin underline-color($color) {
+    &:after {
+        border-top-color: $color;
+    }
+}
+
 @each $name, $color in $primary-colors {
     .underline-#{$name} {
         @extend %underline;
-        &:after {
-            border-top-color: $color;
-        }
+        @include underline-color($color);
+    }
+}
+
+@each $name, $color in $muted-colors {
+    .underline-#{$name} {
+        @extend %underline;
+        @include underline-color($color);
     }
 }
