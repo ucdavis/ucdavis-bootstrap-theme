@@ -72,8 +72,8 @@ a.prettyinpink {
   background-color: #002855;
   color: white;
   clip-path: polygon(0 0, 100% 0, calc(100% - 1.25em) 100%, 0% 100%);
-  padding-bottom: 1em;
-  padding-top: 1em;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
   padding-right: calc(1em + 1.25em);
   padding-left: 1em;
   width: auto;
