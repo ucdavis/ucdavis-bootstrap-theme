@@ -88,13 +88,25 @@ a.prettyinpink {
     }
 }
 
+$underline-center-width: 4em;
+
 .underline {
-    &:after{
+    position: relative;
+    &:after {
         display: block;
-        border-top: 3px solid #daaa00;
         margin: .25em 0 1em;
-        width: 1.25em;
+        border-top: 3px solid #daaa00;
         content: "";
+    }
+    &:not(.text-center):after {
+        width: 1.25em;
+    }
+    &.text-center:after {
+        width: $underline-center-width;
+        position: absolute;
+        left:50%;
+        margin-left: -$underline-center-width / 2;
+        margin-top: 0.75em;
     }
 }
 
