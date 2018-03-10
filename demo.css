@@ -1453,7 +1453,7 @@ a.prettyinpink {
 }
 
 .img-thumbnail-bottom {
-  border-width: 0 0 0 1em;
+  border-width: 0 1em 0 0;
 }
 
 .img-thumbnail.unitrans-red {
@@ -1587,5 +1587,6 @@ section {
   padding-top: 1em;
   padding-bottom: 1em;
   margin-bottom: 1em;
+  padding-right: 2em;
 }
 /*# sourceMappingURL=demo.css.map */

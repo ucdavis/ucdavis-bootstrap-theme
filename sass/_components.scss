@@ -20,7 +20,7 @@
     border-width: 0 0 1em 0;
 }
 .img-thumbnail-bottom {
-    border-width: 0 0 0 1em;
+    border-width: 0 1em 0 0;
 }
 
 @each $name, $color in $primary-colors {
