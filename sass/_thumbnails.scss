@@ -1,0 +1,29 @@
+.img-thumbnail {
+    border-radius: 0;
+    border: none;
+    padding-left: 0;
+    padding: 0;
+    border: 1em solid $ucdavis-blue;
+    &:not(.img-thumbnail-right):not(.img-thumbnail-top):not(.img-thumbnail-bottom) {
+        border-width: 0 0 0 1em;
+    }
+}
+.img-thumbnail-left {
+    border-width: 0 0 0 1em;
+}
+.img-thumbnail-top {
+    border-width: 1em 0 0 0;
+}
+.img-thumbnail-right {
+    border-width: 0 0 1em 0;
+}
+.img-thumbnail-bottom {
+    border-width: 0 1em 0 0;
+}
+
+@each $name, $color in $primary-colors {
+    .img-thumbnail.#{$name}{
+        border-color: $color;
+    }
+}
+
