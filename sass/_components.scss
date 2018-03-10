@@ -1,2 +1,10 @@
 @import "buttons";
 @import "thumbnails";
+table {
+    thead {
+        border-bottom: 2px solid $ucdavis-gold;
+        th {
+            border: none !important;
+        }
+    }
+}

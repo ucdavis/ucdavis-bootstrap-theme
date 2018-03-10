@@ -1503,6 +1503,14 @@ a.prettyinpink {
   border-color: #642667;
 }
 
+table thead {
+  border-bottom: 2px solid #c99700;
+}
+
+table thead th {
+  border: none !important;
+}
+
 .swatches pre {
   overflow: visible !important;
 }

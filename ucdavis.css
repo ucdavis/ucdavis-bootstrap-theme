@@ -1502,4 +1502,12 @@ a.prettyinpink {
 .img-thumbnail.wine-grape {
   border-color: #642667;
 }
+
+table thead {
+  border-bottom: 2px solid #c99700;
+}
+
+table thead th {
+  border: none !important;
+}
 /*# sourceMappingURL=ucdavis.css.map */
