@@ -18,7 +18,7 @@ $danger-alert: desaturate(lighten($unitrans-red, 30%), 10%);
 .alert-info {
     background-color: $info-alert;
     border-color: darken($info-alert, 10%);
-    color: darken(desaturate($color: $info-alert, $amount: 10%), 35%);
+    color: darken(desaturate($color: $info-alert, $amount: 10%), 45%);
 }   
 .alert-success {
     background-color: $success-alert;
