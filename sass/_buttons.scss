@@ -10,7 +10,7 @@
 // for primary, secondary, info, success, warning, danger only
 @mixin button-color($color) {
     background-color: $color;
-    border-color: $color;
+    border-color: $border-darken;
     color: white;
 }
 
