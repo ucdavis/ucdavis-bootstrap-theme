@@ -1,0 +1,54 @@
+@mixin bold-colors($color) {
+    color: color-yiq($color);
+    background-color: $color;
+    .card-header {
+        color: white;
+        background-color: $color;
+    }
+    .card-body {
+        color: color-yiq(desaturate(lighten($color, 40%), 20%)); 
+        background-color: desaturate(lighten($color, 40%), 20%);    
+    }
+}
+.card {
+    border-radius: 0;
+    .card-header {
+        font-weight: bold;
+        .card-title {
+            color: inherit;
+        }
+    }
+    @each $name, $color in $primary-colors {
+        &.#{$name} {
+            @include bold-colors($color);
+        }
+    }
+    @each $name, $color in $muted-colors {
+        &.#{$name} {
+            color: color-yiq($color); 
+            background-color: $color;
+            .card-header {
+                color: white;
+                background-color: $color;
+            }
+            .card-body {
+                color: color-yiq(desaturate(lighten($color, 30%), 20%)); 
+                background-color: desaturate(lighten($color, 30%), 20%);      
+            }
+        }
+    }
+    &.card-primary {
+        @include bold-colors($ucdavis-blue);
+        .card-body {
+            background-color: desaturate(lighten($ucdavis-blue, 20%), 60%);
+            color: white;
+        }
+    }
+    &.card-secondary {
+        @include bold-colors($ucdavis-gold);
+        .card-body {
+            background-color: desaturate(lighten($ucdavis-gold, 40%), 60%);
+            color: $ucdavis-blue;
+        }
+    }
+}

@@ -10,7 +10,6 @@
 // for primary, secondary, info, success, warning, danger only
 @mixin button-color($color) {
     background-color: $color;
-    border-color: $border-darken;
     color: white;
 }
 
@@ -31,6 +30,7 @@
     padding-bottom: 0.5em;
     padding-left: 1em;
     padding-right: 1em;
+    border-color: $border-darken;
 }
 .btn-primary {
     @include button-color($ucdavis-blue);
@@ -40,7 +40,15 @@
 }
 
 .btn-secondary {
-    @include button-color($ucdavis-gold);
+    $main-color: desaturate(lighten($ucdavis-gold, 40%), 20%);
+    background-color: $main-color;
+    color: lighten($ucdavis-blue, 10%);
+    border-color: transparent;
+    &:hover {
+        background-color: lighten($main-color, 10%);
+        border-color: transparent;
+        color: lighten($ucdavis-blue, 10%);
+    }
 }
 
 .btn-success {

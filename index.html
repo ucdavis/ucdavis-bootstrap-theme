@@ -134,15 +134,29 @@
       <div class="page-header">
         <h1>Body copy</h1>
       </div>
+      <div class="example">
       <h2>Title - h2</h2>
       <p class="lead">Lead text - Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.</p>
       <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p><p>
 
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p><p>
+    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p><p>
 
-Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+    Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+</div>
+<pre><code>
+    &lth2&gtTitle - h2&lt/h2&gt
+    &ltp class="lead"&gt Lead text - Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.&lt/p&gt
+    &ltp&gt Nullam quis risus eget urna mollis ornare vel eu leo. 
+    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+    Nullam id dolor id nibh ultricies vehicula.&lt/p&gt
+    &ltp&gt Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+    Donec ullamcorper nulla non metus auctor fringilla. 
+    Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. 
+    Donec ullamcorper nulla non metus auctor fringilla.&lt/p&gt
+    &ltp&gt Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.&lt/p&gt</pre></code>
 
 <div class="page-header"><h1>Tables</h1></div>
+<div class="example">
 <div class="table-responsive">
 <table class="table table-striped">
   <thead>
@@ -193,6 +207,59 @@ Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit no
   </tbody>
 </table>
 </div>
+</div>
+<pre><code>
+&ltdiv class="table-responsive"&gt
+  &lttable class="table table-striped"&gt
+    &ltthead&gt
+      &lttr&gt
+        &ltth&gt#&lt/th&gt
+        &ltth&gtFirst Name&lt/th&gt
+        &ltth&gtLast Name&lt/th&gt
+        &ltth&gtSocial Security&lt/th&gt
+        &ltth&gtGender&lt/th&gt             
+      &lt/tr&gt
+    &lt/thead&gt
+    &lttbody&gt
+      &lttr&gt
+        &lttd&gt1&lt/td&gt
+        &lttd&gtPhilip&lt/td&gt
+        &lttd&gtFry&lt/td&gt
+        &lttd&gt123-33-4032&lt/td&gt
+        &lttd&gtMale&lt/td&gt
+      &lt/tr&gt
+      &lttr&gt
+        &lttd&gt2&lt/td&gt
+        &lttd&gtJohn&lt/td&gt
+        &lttd&gtZoidberg&lt/td&gt
+        &lttd&gt342-23-2423&lt/td&gt
+        &lttd&gtMale&lt/td&gt
+      &lt/tr&gt
+      &lttr&gt
+        &lttd&gt3&lt/td&gt
+        &lttd&gtHermes&lt/td&gt
+        &lttd&gtConrad&lt/td&gt
+        &lttd&gt493-23-4323&lt/td&gt
+        &lttd&gtMale&lt/td&gt
+      &lt/tr&gt
+      &lttr&gt 
+        &lttd&gt4&lt/td&gt
+        &lttd&gtAmy&lt/td&gt
+        &lttd&gtWong&lt/td&gt
+        &lttd&gt454-45-4324&lt/td&gt
+        &lttd&gtFemale&lt/td&gt
+      &lt/tr&gt
+      &lttr&gt
+        &lttd&gt5&lt/td&gt
+        &lttd&gtTuranga&lt/td&gt
+        &lttd&gtLeela&lt/td&gt
+        &lttd&gt134-31-3431&lt/td&gt
+        &lttd&gtFemale&lt/td&gt
+      &lt/tr&gt
+    &lt/tbody&gt
+  &lt/table&gt
+&lt/div&gt
+</code></pre>
 <div class="page-header"><h1>Forms</h1></div>
 <form class="well well-large" method="POST" action="/Sample/Form" role="form" novalidate="novalidate">
     <fieldset>
@@ -236,8 +303,9 @@ Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit no
 </form>
       <div class="page-header">
         <h1>Color palette</h1>
-        <p>These are all the colors available to be used to style any component where colors are applied, just add the color modifier.</p>
       </div>
+      <p>These are all the colors available to be used to style any component where colors are applied, just add the color modifier.</p>
+      <p>Background colors can be set using the class <code>.bg-&ltcolor&gt</code></p>
         <dl class="row swatches">
           <dt class="col-2">UC Davis Blue <pre><code>.ucdavis-blue</code><pre></dt>
           <dd class="col-2"><span class="swatch ucdavis-blue">&nbsp;</span></dd>
@@ -294,6 +362,7 @@ Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit no
       <p>
         <button type="button" class="btn btn-lg btn-default">Default</button>
         <button type="button" class="btn btn-lg btn-primary">Primary</button>
+        <button type="button" class="btn btn-lg btn-secondary">Secondary</button>
         <button type="button" class="btn btn-lg btn-success">Success</button>
         <button type="button" class="btn btn-lg btn-info">Info</button>
         <button type="button" class="btn btn-lg btn-warning">Warning</button>
@@ -304,6 +373,7 @@ Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit no
       <p>
         <button type="button" class="btn btn-default">Default</button>
         <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-secondary">Secondary</button>
         <button type="button" class="btn btn-success">Success</button>
         <button type="button" class="btn btn-info">Info</button>
         <button type="button" class="btn btn-warning">Warning</button>
@@ -314,6 +384,7 @@ Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit no
       <p>
         <button type="button" class="btn btn-sm btn-default">Default</button>
         <button type="button" class="btn btn-sm btn-primary">Primary</button>
+        <button type="button" class="btn btn-sm btn-secondary">Secondary</button>
         <button type="button" class="btn btn-sm btn-success">Success</button>
         <button type="button" class="btn btn-sm btn-info">Info</button>
         <button type="button" class="btn btn-sm btn-warning">Warning</button>
@@ -533,43 +604,139 @@ Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit no
 
 
       <div class="page-header">
-        <h1>Panels</h1>
+        <h1>Cards</h1>
       </div>
+      <div class="example">
       <div class="row">
         <div class="col-sm-4">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h3 class="panel-title">Panel title</h3>
+          <div class="card card-primary">
+            <div class="card-header">
+              <h3 class="card-title">Panel title</h3>
             </div>
-            <div class="panel-body">
+            <div class="card-body">
               Panel content
             </div>
           </div>
  
         </div><!-- /.col-sm-4 -->
         <div class="col-sm-4">
-          <div class="panel panel-success">
-            <div class="panel-heading">
-              <h3 class="panel-title">Panel title</h3>
+          <div class="card card-secondary">
+            <div class="card-header">
+              <h3 class="card-title">Panel title</h3>
             </div>
-            <div class="panel-body">
+            <div class="card-body">
               Panel content
             </div>
           </div>
         </div><!-- /.col-sm-4 -->
         <div class="col-sm-4">
-         <div class="panel panel-primary">
-            <div class="panel-heading">
-              <h3 class="panel-title">Panel title</h3>
+         <div class="card mu-brick">
+            <div class="card-header">
+              <h3 class="card-title">Panel title</h3>
             </div>
-            <div class="panel-body">
+            <div class="card-body">
               Panel content
             </div>
           </div>
         </div>
-    
+        <div class="col-sm-4">
+            <div class="card sunny-grass">
+               <div class="card-header">
+                 <h3 class="card-title">Panel title</h3>
+               </div>
+               <div class="card-body">
+                 Panel content
+               </div>
+             </div>
+           </div>
+           <div class="col-sm-4">
+              <div class="card unitrans-red">
+                 <div class="card-header">
+                   <h3 class="card-title">Panel title</h3>
+                 </div>
+                 <div class="card-body">
+                   Panel content
+                 </div>
+               </div>
+             </div>
+             <div class="col-sm-4">
+                <div class="card sky-blue">
+                   <div class="card-header">
+                     <h3 class="card-title">Panel title</h3>
+                   </div>
+                   <div class="card-body">
+                     Panel content
+                   </div>
+                 </div>
+               </div>
+              </div>
       </div>
+      <pre><code>
+&ltdiv class="row"&gt
+    &ltdiv class="col-sm-4"&gt
+      &ltdiv class="card card-primary"&gt
+        &ltdiv class="card-header"&gt
+          &lth3 class="card-title"&gtPanel title&lt/h3&gt
+        &lt/div&gt
+        &ltdiv class="card-body"&gt
+          Panel content
+        &lt/div&gt
+      &lt/div&gt
 
+    &lt/div&gt&lt!-- /.col-sm-4 --&gt
+    &ltdiv class="col-sm-4"&gt
+      &ltdiv class="card card-secondary"&gt
+        &ltdiv class="card-header"&gt
+          &lth3 class="card-title"&gtPanel title&lt/h3&gt
+        &lt/div&gt
+        &ltdiv class="card-body"&gt
+          Panel content
+        &lt/div&gt
+      &lt/div&gt
+    &lt/div&gt&lt!-- /.col-sm-4 --&gt
+    &ltdiv class="col-sm-4"&gt
+      &ltdiv class="card mu-brick"&gt
+        &ltdiv class="card-header"&gt
+          &lth3 class="card-title"&gtPanel title&lt/h3&gt
+        &lt/div&gt
+        &ltdiv class="card-body"&gt
+          Panel content
+        &lt/div&gt
+      &lt/div&gt
+    &lt/div&gt
+    &ltdiv class="col-sm-4"&gt
+        &ltdiv class="card sunny-grass"&gt
+            &ltdiv class="card-header"&gt
+              &lth3 class="card-title"&gtPanel title&lt/h3&gt
+            &lt/div&gt
+            &ltdiv class="card-body"&gt
+              Panel content
+            &lt/div&gt
+          &lt/div&gt
+        &lt/div&gt
+        &ltdiv class="col-sm-4"&gt
+          &ltdiv class="card unitrans-red"&gt
+              &ltdiv class="card-header"&gt
+                &lth3 class="card-title"&gtPanel title&lt/h3&gt
+              &lt/div&gt
+              &ltdiv class="card-body"&gt
+                Panel content
+              &lt/div&gt
+            &lt/div&gt
+          &lt/div&gt
+          &ltdiv class="col-sm-4"&gt
+            &ltdiv class="card sky-blue"&gt
+                &ltdiv class="card-header"&gt
+                  &lth3 class="card-title"&gtPanel title&lt/h3&gt
+                &lt/div&gt
+                &ltdiv class="card-body"&gt
+                  Panel content
+                &lt/div&gt
+              &lt/div&gt
+            &lt/div&gt
+          &lt/div&gt
+
+      </code></pre>
 
 
       <div class="page-header">

@@ -1,6 +1,9 @@
+@import "utilities";
 @import "buttons";
 @import "thumbnails";
 @import "lists";
+@import "cards";
+
 table {
     thead {
         border-bottom: 2px solid $ucdavis-gold;
@@ -8,4 +11,9 @@ table {
             border: none !important;
         }
     }
+}
+
+.well {
+    background-color: $background-color;
+    padding: 2em;
 }

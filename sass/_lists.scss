@@ -5,5 +5,6 @@
 @each $color, $map in $contextual-colors {
     .list-group-item-#{$color} {
         background-color: map-get($map, "bg");
+        color: map-get($map, "fg");
     }
 }

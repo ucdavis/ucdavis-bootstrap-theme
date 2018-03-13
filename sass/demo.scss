@@ -7,7 +7,9 @@
 .swatches pre {
     overflow: visible !important;
     > code {
-        color: #e83e8c !important;
+        span {
+            color: #e83e8c !important;
+        }
         overflow: visible !important;
         background: transparent !important;
     }
@@ -41,4 +43,8 @@ section {
     padding-bottom: 1em;
     margin-bottom: 1em;
     padding-right: 2em;
+}
+
+.card {
+    margin: 0.5em;
 }

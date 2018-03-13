@@ -1,0 +1,41 @@
+@each $name, $color in $primary-colors {
+    .bg-#{$name} {
+        background-color: $color !important;
+    }
+}
+
+@each $name, $color in $muted-colors {
+    .bg-#{$name} {
+        background-color: $color !important;
+    }
+}
+
+@each $context, $map in $contextual-colors {
+    .bg-#{$context} {
+        background-color: map-get($map, "bg") !important;
+    } 
+}
+
+.bg-primary {
+    background-color: $ucdavis-blue !important;
+}
+
+.bg-secondary {
+    background-color: $ucdavis-gold !important;
+}
+
+.bg-success {
+    background-color: $sunny-grass !important;
+}
+
+.bg-info {
+    background-color: $sky-blue !important;
+}
+
+.bg-warning {
+    background-color: $california-poppy !important;
+}
+
+.bg-danger {
+    background-color: $unitrans-red !important;
+}
