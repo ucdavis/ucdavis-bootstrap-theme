@@ -15,10 +15,10 @@
     border-width: 1em 0 0 0;
 }
 .img-thumbnail-right {
-    border-width: 0 0 1em 0;
+    border-width: 0 1em 0 0;
 }
 .img-thumbnail-bottom {
-    border-width: 0 1em 0 0;
+    border-width: 0 0 1em 0;
 }
 
 @each $name, $color in $primary-colors {
