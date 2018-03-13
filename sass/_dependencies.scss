@@ -73,3 +73,51 @@
 	$boxcolor:			#ffffff; //	content boxs
 	$borders:			#dddddd; // border color
 	$border-darken: 	rgba(0,0,0,.1);
+
+// background colors:
+
+$primary-bg: desaturate(lighten($ucdavis-blue, 5%), 10%);
+$secondary-bg: desaturate(lighten($ucdavis-gold, 20%), 30%);
+$success-bg: desaturate(lighten($sunny-grass,18%), 18%);
+$warning-bg: desaturate(lighten($golden-lupine,18%), 0%);
+$info-bg: desaturate(lighten($sky-blue,35%), 10%);
+$danger-bg: desaturate(lighten($unitrans-red, 30%), 10%);
+
+//fg or text colors:
+
+$primary-fg: lighten(desaturate($color: $primary-bg, $amount: 60%), 50%);
+$secondary-fg: darken(desaturate($color: $secondary-bg, $amount: 10%), 35%);
+$info-fg: darken(desaturate($color: $info-bg, $amount: 10%), 45%);
+$success-fg: darken(desaturate($color: $success-bg, $amount: 10%), 35%);
+$warning-fg: darken(desaturate($color: $warning-bg, $amount: 10%), 45%);
+$danger-fg: darken(desaturate($color: $danger-bg, $amount: 10%), 45%);
+
+// map
+
+$contextual-colors:(
+	primary: (
+		fg: $primary-fg,
+		bg: $primary-bg
+	),
+	secondary: (
+		fg: $secondary-fg,
+		bg: $secondary-bg
+	),
+	success: (
+		fg: $success-fg,
+		bg: $success-bg
+	),
+	warning: (
+		fg: $warning-fg,
+		bg: $warning-bg
+	),
+	info: (
+		fg: $info-fg,
+		bg: $info-bg
+	),
+	danger: (
+		fg: $danger-fg,
+		bg: $danger-bg
+	)
+);
+

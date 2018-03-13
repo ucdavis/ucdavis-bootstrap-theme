@@ -200,10 +200,6 @@ a.prettyinpink {
   background-color: #e0bc4f;
   color: #645119; }
 
-.alert-info {
-  background-color: #9be7fa;
-  color: #12829e; }
-
 .alert-success {
   background-color: #a3d169;
   color: #476126; }
@@ -211,6 +207,10 @@ a.prettyinpink {
 .alert-warning {
   background-color: #ffdf5c;
   color: #6f5b06; }
+
+.alert-info {
+  background-color: #9be7fa;
+  color: #12829e; }
 
 .alert-danger {
   background-color: #ed728a;
@@ -985,6 +985,9 @@ a.prettyinpink {
 
 .img-thumbnail.wine-grape {
   border-color: #642667; }
+
+.list-group-item-primary {
+  background-color: #063469; }
 
 table thead {
   border-bottom: 2px solid #c99700; }
