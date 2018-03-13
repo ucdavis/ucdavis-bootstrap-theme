@@ -8,6 +8,15 @@
            flex-shrink: 0;
            display: block;
            background-image: url("./media/global-header-bg.svg");
+           .navbar-brand {
+               width: 10em;
+               &.navbar-brand-lg {
+                    width: 20em;
+                }
+               img {
+                   max-width: 100%;
+               }
+           }
         }
         .navbar-nav {
             padding: 0.5rem 1rem;

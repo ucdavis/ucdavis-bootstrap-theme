@@ -790,6 +790,18 @@ a.prettyinpink {
   background-image: url("./media/global-header-bg.svg");
 }
 
+.navbar.navbar-default .navbar-banner .navbar-brand {
+  width: 10em;
+}
+
+.navbar.navbar-default .navbar-banner .navbar-brand.navbar-brand-lg {
+  width: 20em;
+}
+
+.navbar.navbar-default .navbar-banner .navbar-brand img {
+  max-width: 100%;
+}
+
 .navbar.navbar-default .navbar-nav {
   padding: 0.5rem 1rem;
   display: inline-flex;
