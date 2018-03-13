@@ -64,6 +64,10 @@ a.prettyinpink {
   color: #cc6699;
 }
 
+.page-header {
+  color: white;
+}
+
 .page-header > * {
   display: inline-block;
 }
@@ -77,86 +81,6 @@ a.prettyinpink {
   padding-right: calc(1em + 1.25em);
   padding-left: 1em;
   width: auto;
-}
-
-.page-header.unitrans-red {
-  background-color: #ba0c2f;
-  color: #fff;
-}
-
-.page-header.western-redbud {
-  background-color: #c6007e;
-  color: #fff;
-}
-
-.page-header.california-poppy {
-  background-color: #ed8800;
-  color: #002855;
-}
-
-.page-header.golden-lupine {
-  background-color: #ffcd00;
-  color: #002855;
-}
-
-.page-header.sunny-grass {
-  background-color: #78be20;
-  color: #002855;
-}
-
-.page-header.sky-blue {
-  background-color: #00b5e2;
-  color: #fff;
-}
-
-.page-header.recpool-blue {
-  background-color: #008eaa;
-  color: #fff;
-}
-
-.page-header.wine-grape {
-  background-color: #642667;
-  color: #fff;
-}
-
-.page-header.mu-brick {
-  background-color: #c26e60;
-  color: #fff;
-}
-
-.page-header.hart-stucco {
-  background-color: #e6a65d;
-  color: #002855;
-}
-
-.page-header.sage-green {
-  background-color: #9caf88;
-  color: #002855;
-}
-
-.page-header.evergreen {
-  background-color: #00573f;
-  color: #fff;
-}
-
-.page-header.wintersky-gray {
-  background-color: #5b7f95;
-  color: #fff;
-}
-
-.page-header.cenwalk-gray {
-  background-color: #b1b3b3;
-  color: #002855;
-}
-
-.page-header.cork-oak {
-  background-color: #aca39a;
-  color: #002855;
-}
-
-.page-header.shingle-brown {
-  background-color: #4f2c1d;
-  color: #fff;
 }
 
 .underline {
@@ -851,6 +775,24 @@ a.prettyinpink {
 .card.card-secondary .card-body {
   background-color: #e0d5b6;
   color: #002855;
+}
+
+.navbar {
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.navbar.navbar-default .navbar-banner {
+  padding: 0.5rem 1rem;
+  flex-basis: 100%;
+  flex-shrink: 0;
+  display: block;
+  background-image: url("./media/global-header-bg.svg");
+}
+
+.navbar.navbar-default .navbar-nav {
+  padding: 0.5rem 1rem;
+  display: inline-flex;
 }
 
 table thead {

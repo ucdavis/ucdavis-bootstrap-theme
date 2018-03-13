@@ -54,6 +54,7 @@ a.prettyinpink {
 }
 
 .page-header {
+    color: white;
     > * {
         &:first-child {
             background-color: $ucdavis-blue;
@@ -71,20 +72,6 @@ a.prettyinpink {
             width: auto;
         }
     display: inline-block;
-    }
-}
-
-@each $name, $color in $primary-colors {
-    .page-header.#{$name} {
-        background-color: $color;
-        color: color-yiq($color);
-    }
-}
-
-@each $name, $color in $muted-colors {
-    .page-header.#{$name} {
-        background-color: $color;
-        color: color-yiq($color);
     }
 }
 
