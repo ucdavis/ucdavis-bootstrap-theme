@@ -34,6 +34,11 @@
         border-color: transparent;
         color: lighten($ucdavis-blue, 10%);
     }
+    &:not(:disabled):not(.disabled):active, &.active {
+        background-color: $main-color;
+        color: lighten($ucdavis-blue, 10%);
+        border-color: transparent;
+    }
 }
 
 .btn-success {
