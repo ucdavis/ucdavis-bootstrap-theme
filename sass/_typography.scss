@@ -1,5 +1,11 @@
 html {
-	font-size:16px;
+	font-size:  16px;
+    @include media-breakpoint-down("md") {
+        font-size: 14px;
+    }
+    @include media-breakpoint-down("sm") {
+        font-size: 12px;
+    }
 }
 body {
 	font-family:$sans-serif;
@@ -67,7 +73,7 @@ a.prettyinpink {
             );
             padding-bottom: 0.5em;
             padding-top: 0.5em;
-            padding-right: calc(1em + 1.25em);
+            padding-right: 1.75em;
             padding-left: 1em;
             width: auto;
         }
