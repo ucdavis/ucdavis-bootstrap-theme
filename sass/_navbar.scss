@@ -3,11 +3,13 @@
     flex-wrap: wrap;
      &.navbar-default {
         .navbar-banner {
-           padding: 0.5rem 1rem;
-           flex-basis: 100%;
-           flex-shrink: 0;
-           display: block;
-           background-image: url("./media/global-header-bg.svg");
+            padding: 0.5rem 1rem;
+            flex-basis: 100%;
+            flex-shrink: 0;
+            display: block;
+            background-image: url("./media/global-header-bg.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
            .navbar-brand {
                width: 10em;
                &.navbar-brand-lg {

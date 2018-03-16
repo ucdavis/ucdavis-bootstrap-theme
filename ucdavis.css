@@ -556,7 +556,9 @@ a.prettyinpink {
     flex-basis: 100%;
     flex-shrink: 0;
     display: block;
-    background-image: url("./media/global-header-bg.svg"); }
+    background-image: url("./media/global-header-bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover; }
     .navbar.navbar-default .navbar-banner .navbar-brand {
       width: 10em; }
       .navbar.navbar-default .navbar-banner .navbar-brand.navbar-brand-lg {
