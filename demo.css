@@ -566,8 +566,16 @@ a.prettyinpink {
       .navbar.navbar-default .navbar-banner .navbar-brand img {
         max-width: 100%; }
   .navbar.navbar-default .navbar-nav {
-    padding: 0.5rem 1rem;
     display: inline-flex; }
+    .navbar.navbar-default .navbar-nav .nav-item {
+      padding: 0.5em 1rem; }
+      .navbar.navbar-default .navbar-nav .nav-item:hover {
+        background-color: #c99700; }
+      .navbar.navbar-default .navbar-nav .nav-item.active, .navbar.navbar-default .navbar-nav .nav-item:active {
+        background-color: #f5e0a1; }
+      .navbar.navbar-default .navbar-nav .nav-item .nav-link, .navbar.navbar-default .navbar-nav .nav-item .nav-link:hover {
+        font-size: 1.25rem;
+        color: #002855; }
 
 table thead {
   border-bottom: 2px solid #c99700; }
