@@ -23,17 +23,32 @@
         .navbar-nav {
             display: inline-flex;
             .nav-item{
-                padding: 0.5em 1em;
                 &:hover {
                     background-color: $ucdavis-gold;
                 }
                 &.active, &:active {
                     background-color: desaturate(lighten($ucdavis-gold, 40%),20%);
                 }
-                .nav-link {
+                .nav-link, &.nav-link {
+                    padding: 1em 1.5em;
                     &, &:hover {
-                        font-size: 1.25rem;
                         color: $ucdavis-blue;
+                    }
+                }
+            }
+            .dropdown {
+                display: flex;
+                .dropdown-menu {
+                    margin-top: 0;
+                    border-radius: 0;
+                    .dropdown-item {
+                        &:hover, &:active, &.active {
+                            background-color: desaturate(lighten($ucdavis-gold, 40%),20%);
+                        }
+                        a {
+                            text-decoration: none;
+                            color: $ucdavis-blue;
+                        }
                     }
                 }
             }
