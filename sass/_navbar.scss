@@ -1,15 +1,36 @@
 .navbar {
     padding: 0;
     flex-wrap: wrap;
+    .navbar-toggler {
+        position: absolute;
+        right: 0;
+        z-index: 1;
+        top: 0;
+        padding-top: 0.5rem;
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+    }
      &.navbar-default {
         .navbar-banner {
+            &:before{
+                background: url("./media/global-header-bg.svg"),
+                linear-gradient(to right, #183357, #d9b337);
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: absolute;
+                width: 100%;
+                content: "";
+                top: 0;
+                left: 0;
+                z-index: -1;
+                height: 100%;
+            }
             padding: 0.5rem 1rem;
             flex-basis: 100%;
             flex-shrink: 0;
             display: block;
-            background-image: url("./media/global-header-bg.svg");
-            background-repeat: no-repeat;
-            background-size: cover;
+            position: relative;
            .navbar-brand {
                width: 10em;
                &.navbar-brand-lg {
