@@ -7,11 +7,34 @@
         z-index: 1;
         top: 0;
         padding-top: 0.5rem;
-        .navbar-toggler-icon {
-            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        
+    }
+    .navbar-banner {
+        padding: 0.5rem 1rem;
+        flex-basis: 100%;
+        flex-shrink: 0;
+        display: block;
+        position: relative;
+        .navbar-brand {
+            width: 10em;
+            &.navbar-brand-lg {
+                width: 20em;
+            }
+            img {
+                max-width: 100%;
+            }
         }
     }
-     &.navbar-default {
+    .navbar-nav {
+        display: inline-flex;
+        .dropdown {
+            display: flex;
+        }
+    }
+    &.navbar-default {
+        .navbar-toggler > .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
         .navbar-banner {
             &:before{
                 background: url("./media/global-header-bg.svg"),
@@ -26,23 +49,9 @@
                 z-index: -1;
                 height: 100%;
             }
-            padding: 0.5rem 1rem;
-            flex-basis: 100%;
-            flex-shrink: 0;
-            display: block;
-            position: relative;
-           .navbar-brand {
-               width: 10em;
-               &.navbar-brand-lg {
-                    width: 20em;
-                }
-               img {
-                   max-width: 100%;
-               }
-           }
+            
         }
         .navbar-nav {
-            display: inline-flex;
             .nav-item{
                 &:hover {
                     background-color: $ucdavis-gold;
@@ -58,7 +67,6 @@
                 }
             }
             .dropdown {
-                display: flex;
                 .dropdown-menu {
                     margin-top: 0;
                     border-radius: 0;
@@ -74,5 +82,8 @@
                 }
             }
         }
+    }
+    &.navbar-inverted {
+
     }
 }
