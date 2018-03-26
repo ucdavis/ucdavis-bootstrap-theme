@@ -23,6 +23,7 @@
             img {
                 max-width: 100%;
             }
+     
         }
     }
     .navbar-nav {
@@ -49,6 +50,31 @@
                     a {
                         text-decoration: none;
                         color: $ucdavis-blue;
+                    }
+                }
+            }
+        }
+        &.navbar-tabs {
+            overflow-y: hidden;
+            height: auto;
+            transition: height 0.5s ease-in;
+            .dropdown {
+                flex-direction: column;
+                .dropdown-menu {
+                    position: static;
+                    padding-top: 0;
+                    border: none;
+                    display: block;
+                    visibility: collapse;
+                }
+                &.show {
+                    .dropdown-menu {
+                        visibility: visible;
+                    }
+                }
+                &.show ~ .dropdown {
+                    .dropdown-menu {
+                        visibility: visible;
                     }
                 }
             }

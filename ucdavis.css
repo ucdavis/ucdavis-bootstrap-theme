@@ -602,6 +602,22 @@ a.prettyinpink {
         .navbar .navbar-nav .dropdown .dropdown-menu .dropdown-item a {
           text-decoration: none;
           color: #002855; }
+    .navbar .navbar-nav.navbar-tabs {
+      overflow-y: hidden;
+      height: auto;
+      transition: height 0.5s ease-in; }
+      .navbar .navbar-nav.navbar-tabs .dropdown {
+        flex-direction: column; }
+        .navbar .navbar-nav.navbar-tabs .dropdown .dropdown-menu {
+          position: static;
+          padding-top: 0;
+          border: none;
+          display: block;
+          visibility: collapse; }
+        .navbar .navbar-nav.navbar-tabs .dropdown.show .dropdown-menu {
+          visibility: visible; }
+        .navbar .navbar-nav.navbar-tabs .dropdown.show ~ .dropdown .dropdown-menu {
+          visibility: visible; }
   .navbar.navbar-default .navbar-toggler > .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
   .navbar.navbar-default .navbar-banner:before {
