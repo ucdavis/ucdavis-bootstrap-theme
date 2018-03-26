@@ -1,3 +1,18 @@
+@font-face {
+  font-family: 'proxima-nova-r';
+  src: url("/fonts/proximanova-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'proxima-nova-i';
+  src: url("/fonts/proximanova-regularit-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'proxima-nova-b';
+  src: url("/fonts/proximanova-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
 html {
   font-size: 16px; }
   @media (max-width: 991.98px) {
@@ -8,11 +23,11 @@ html {
       font-size: 12px; } }
 
 body {
-  font-family: "proxima-nova", Lucida Grande, Lucida Sans, Helvetica Neue, Helvetica Std, Helvetica, Univers, Arial, sans-serif; }
+  font-family: "proxima-nova-r", Lucida Grande, Lucida Sans, Helvetica Neue, Helvetica Std, Helvetica, Univers, Arial, sans-serif; }
 
 h1, h2, h3, h4, h5, h6 {
   color: #002855;
-  font-family: "proxima-nova", Lucida Grande, Lucida Sans, Helvetica Neue, Helvetica Std, Helvetica, Univers, Arial, sans-serif; }
+  font-family: "proxima-nova-r", Lucida Grande, Lucida Sans, Helvetica Neue, Helvetica Std, Helvetica, Univers, Arial, sans-serif; }
 
 h1, .h1, h2, .h2, h3, .h3 {
   margin-top: 1rem;
@@ -31,7 +46,7 @@ h4 {
   font-size: 1.6rem; }
 
 p {
-  font-family: "proxima-nova", Lucida Grande, Lucida Sans, Helvetica Neue, Helvetica Std, Helvetica, Univers, Arial, sans-serif;
+  font-family: "proxima-nova-r", Lucida Grande, Lucida Sans, Helvetica Neue, Helvetica Std, Helvetica, Univers, Arial, sans-serif;
   line-height: 1.625;
   letter-spacing: .025rem; }
 
@@ -570,9 +585,23 @@ a.prettyinpink {
       .navbar .navbar-banner .navbar-brand img {
         max-width: 100%; }
   .navbar .navbar-nav {
-    display: inline-flex; }
+    display: inline-flex;
+    position: relative; }
+    .navbar .navbar-nav .nav-item .nav-link, .navbar .navbar-nav .nav-item.nav-link {
+      padding: 1em 1.5em;
+      color: inherit; }
+    .navbar .navbar-nav .nav-link {
+      color: inherit; }
     .navbar .navbar-nav .dropdown {
       display: flex; }
+      .navbar .navbar-nav .dropdown .dropdown-menu {
+        margin-top: 0;
+        border-radius: 0; }
+        .navbar .navbar-nav .dropdown .dropdown-menu .dropdown-item:hover, .navbar .navbar-nav .dropdown .dropdown-menu .dropdown-item:active, .navbar .navbar-nav .dropdown .dropdown-menu .dropdown-item.active {
+          background-color: #f5e0a1; }
+        .navbar .navbar-nav .dropdown .dropdown-menu .dropdown-item a {
+          text-decoration: none;
+          color: #002855; }
   .navbar.navbar-default .navbar-toggler > .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
   .navbar.navbar-default .navbar-banner:before {
@@ -594,14 +623,23 @@ a.prettyinpink {
     padding: 1em 1.5em; }
     .navbar.navbar-default .navbar-nav .nav-item .nav-link, .navbar.navbar-default .navbar-nav .nav-item .nav-link:hover, .navbar.navbar-default .navbar-nav .nav-item.nav-link, .navbar.navbar-default .navbar-nav .nav-item.nav-link:hover {
       color: #002855; }
-  .navbar.navbar-default .navbar-nav .dropdown .dropdown-menu {
-    margin-top: 0;
-    border-radius: 0; }
-    .navbar.navbar-default .navbar-nav .dropdown .dropdown-menu .dropdown-item:hover, .navbar.navbar-default .navbar-nav .dropdown .dropdown-menu .dropdown-item:active, .navbar.navbar-default .navbar-nav .dropdown .dropdown-menu .dropdown-item.active {
-      background-color: #f5e0a1; }
-    .navbar.navbar-default .navbar-nav .dropdown .dropdown-menu .dropdown-item a {
-      text-decoration: none;
-      color: #002855; }
+  .navbar.navbar-inverted .navbar-nav.container {
+    padding-left: 15px; }
+  .navbar.navbar-inverted .navbar-nav:before {
+    background: url("./media/global-header-bg.svg"), linear-gradient(to right, #183357, #d9b337);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    content: "";
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%; }
+  .navbar.navbar-inverted .navbar-nav .nav-item {
+    color: white; }
+    .navbar.navbar-inverted .navbar-nav .nav-item:hover {
+      background-color: rgba(255, 255, 255, 0.2); }
 
 table thead {
   border-bottom: 2px solid #c99700; }

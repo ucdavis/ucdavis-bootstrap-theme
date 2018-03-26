@@ -27,8 +27,31 @@
     }
     .navbar-nav {
         display: inline-flex;
+        position: relative;
+        .nav-item {
+            .nav-link, &.nav-link {
+                padding: 1em 1.5em;
+                color: inherit;
+            }
+        }
+        .nav-link {
+            color: inherit;
+        }
         .dropdown {
             display: flex;
+            .dropdown-menu {
+                margin-top: 0;
+                border-radius: 0;
+                .dropdown-item {
+                    &:hover, &:active, &.active {
+                        background-color: desaturate(lighten($ucdavis-gold, 40%),20%);
+                    }
+                    a {
+                        text-decoration: none;
+                        color: $ucdavis-blue;
+                    }
+                }
+            }
         }
     }
     &.navbar-default {
@@ -49,7 +72,6 @@
                 z-index: -1;
                 height: 100%;
             }
-            
         }
         .navbar-nav {
             .nav-item{
@@ -66,24 +88,32 @@
                     }
                 }
             }
-            .dropdown {
-                .dropdown-menu {
-                    margin-top: 0;
-                    border-radius: 0;
-                    .dropdown-item {
-                        &:hover, &:active, &.active {
-                            background-color: desaturate(lighten($ucdavis-gold, 40%),20%);
-                        }
-                        a {
-                            text-decoration: none;
-                            color: $ucdavis-blue;
-                        }
-                    }
-                }
-            }
         }
     }
     &.navbar-inverted {
-
+        .navbar-nav {
+            &.container {
+                padding-left: 15px;
+            }
+            &:before{
+                background: url("./media/global-header-bg.svg"),
+                linear-gradient(to right, #183357, #d9b337);
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: absolute;
+                width: 100%;
+                content: "";
+                top: 0;
+                left: 0;
+                z-index: -1;
+                height: 100%;
+            }
+            .nav-item {
+                color: white;
+                &:hover {
+                    background-color: rgba(255, 255, 255, 0.2);
+                }
+            }
+        }
     }
 }
