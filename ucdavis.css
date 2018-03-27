@@ -647,6 +647,7 @@ a.prettyinpink {
   .navbar.navbar-inverted .navbar-nav:before {
     background: url("./media/global-header-bg.svg"), linear-gradient(to right, #183357, #d9b337);
     background-repeat: no-repeat;
+    background-position: center top;
     background-size: cover;
     position: absolute;
     width: 100%;
@@ -663,6 +664,8 @@ a.prettyinpink {
     background-color: rgba(255, 255, 255, 0.1); }
   .navbar.navbar-inverted .navbar-nav.navbar-tabs .dropdown .dropdown-item:hover {
     background-color: rgba(255, 255, 255, 0.2); }
+  .navbar.navbar-inverted .navbar-nav.navbar-tabs .dropdown .dropdown-header {
+    color: #ced4da; }
   .navbar.navbar-inverted .navbar-nav.navbar-tabs .dropdown-menu, .navbar.navbar-inverted .navbar-nav.navbar-tabs .dropdown-item {
     background: transparent; }
     .navbar.navbar-inverted .navbar-nav.navbar-tabs .dropdown-menu a, .navbar.navbar-inverted .navbar-nav.navbar-tabs .dropdown-item a {

@@ -135,6 +135,7 @@
                 background: url("./media/global-header-bg.svg"),
                 linear-gradient(to right, #183357, #d9b337);
                 background-repeat: no-repeat;
+                background-position: center top;
                 background-size: cover;
                 position: absolute;
                 width: 100%;
@@ -159,6 +160,9 @@
                         &:hover {
                             background-color: rgba(255, 255, 255, 0.2);
                         }
+                    }
+                    .dropdown-header {
+                        color: $gray-400;
                     }
                 }
                 .dropdown-menu, .dropdown-item {
