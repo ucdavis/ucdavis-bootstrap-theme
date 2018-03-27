@@ -633,6 +633,8 @@ a.prettyinpink {
     color: white; }
     .navbar.navbar-inverted .navbar-nav .nav-link:hover {
       background-color: rgba(255, 255, 255, 0.2); }
+  .navbar.navbar-inverted .navbar-nav .dropdown-item a {
+    color: #002855; }
   .navbar.navbar-inverted .navbar-nav.navbar-tabs .dropdown:hover {
     background-color: rgba(255, 255, 255, 0.1); }
   .navbar.navbar-inverted .navbar-nav.navbar-tabs .dropdown .dropdown-item:hover {
