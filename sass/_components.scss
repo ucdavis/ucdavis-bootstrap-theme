@@ -1,7 +1,6 @@
 @import "utilities";
 @import "buttons";
 @import "thumbnails";
-@import "lists";
 @import "cards";
 @import "navbar";
 
@@ -24,5 +23,17 @@ form {
     legend {
         color: $ucdavis-blue;
         font-weight:600;
+    }
+}
+.list-group {
+    .list-group-item {
+        border-color: $border-darken;
+        color: $ucdavis-blue;
+        &:hover {
+            background-color: desaturate(lighten($ucdavis-gold, 40%), 20%);
+        }
+        &.active {
+            background-color: $ucdavis-gold;
+        }
     }
 }
