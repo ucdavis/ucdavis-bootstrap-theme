@@ -56,10 +56,6 @@ b, strong, th {
 label {
   font-weight: 500; }
 
-legend {
-  font-family: Georgia, Berkeley, serif;
-  font-weight: 600; }
-
 .lead {
   font-weight: 700;
   color: #b7bec5; }
@@ -683,5 +679,11 @@ table thead {
 .well {
   background-color: #ebebeb;
   padding: 2em; }
+
+form {
+  font-family: "proxima-nova-r", Lucida Grande, Lucida Sans, Helvetica Neue, Helvetica Std, Helvetica, Univers, Arial, sans-serif; }
+  form legend {
+    color: #002855;
+    font-weight: 600; }
 
 /*# sourceMappingURL=ucdavis.css.map */

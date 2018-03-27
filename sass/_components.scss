@@ -18,3 +18,11 @@ table {
     background-color: $background-color;
     padding: 2em;
 }
+
+form {
+    font-family: $sans-serif;
+    legend {
+        color: $ucdavis-blue;
+        font-weight:600;
+    }
+}
