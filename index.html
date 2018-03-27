@@ -514,7 +514,7 @@
           <li class="nav-item active"><a class="nav-link" href="#">HOME</a></li>
           <li class="nav-item"><a class="nav-link" href="#about">ABOUT</a></li>
           <li class="nav-item dropdown">
-              <a href="#" class="nav-link dropdown-toggle" role="button" id="navbarDropdown"  data-toggle="dropdown">DROPDOWN<b class="caret"></b></a>
+              <a href="#" class="nav-link dropdown-toggle" role="button" id="navbarDropdown" data-target=".navbar-tabs" data-toggle="dropdown">DROPDOWN<b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li class="dropdown-item"><a href="#">Action</a></li>
                 <li class="dropdown-item"><a href="#">Another action</a></li>
@@ -526,7 +526,7 @@
               </ul>
             </li>
           <li class="nav-item dropdown">
-            <a href="#" class="nav-link dropdown-toggle" role="button" id="navbarDropdown"  data-toggle="dropdown">DROPDOWN<b class="caret"></b></a>
+            <a href="#" class="nav-link dropdown-toggle" role="button" id="navbarDropdown"  data-target=".navbar-tabs" data-toggle="dropdown">DROPDOWN<b class="caret"></b></a>
             <ul class="dropdown-menu">
               <li class="dropdown-item"><a href="#">Action</a></li>
               <li class="dropdown-item"><a href="#">Another action</a></li>
@@ -540,6 +540,46 @@
         </ul>
       </div><!--/.nav-collapse -->
   </div>
+  <div class="navbar navbar-inverted navbar-expand-md" role="navigation">
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-banner">
+      <div class="container">
+        <a class="navbar-brand navbar-brand" href="#"><img src="/media/ucdavis_logo_blue.png"></a>
+      </div>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-tabs container">
+        <li class="nav-item active"><a class="nav-link" href="#">HOME</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">ABOUT</a></li>
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" role="button" id="navbarDropdown" data-target=".navbar-inverted .navbar-tabs" data-toggle="dropdown">DROPDOWN<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item"><a href="#">Action</a></li>
+              <li class="dropdown-item"><a href="#">Another action</a></li>
+              <li class="dropdown-item"><a href="#">Something else here</a></li>
+              <li class="dropdown-divider"></li>
+              <li class="dropdown-header">Nav header</li>
+              <li class="dropdown-item"><a href="#">Separated link</a></li>
+              <li class="dropdown-item"><a href="#">One more separated link</a></li>
+            </ul>
+          </li>
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" role="button" id="navbarDropdown"  data-target=".navbar-inverted .navbar-tabs" data-toggle="dropdown">DROPDOWN<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-item"><a href="#">Action</a></li>
+            <li class="dropdown-item"><a href="#">Another action</a></li>
+            <li class="dropdown-item"><a href="#">Something else here</a></li>
+            <li class="dropdown-divider"></li>
+            <li class="dropdown-header">Nav header</li>
+            <li class="dropdown-item"><a href="#">Separated link</a></li>
+            <li class="dropdown-item"><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!--/.nav-collapse -->
+</div>
   </div>
   <pre><code>
     &ltdiv class="navbar navbar-default navbar-expand-md navbar-fixed-top" role="navigation"&gt

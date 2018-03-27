@@ -43,21 +43,17 @@
             .dropdown-menu {
                 margin-top: 0;
                 border-radius: 0;
-                .dropdown-item {
-                    &:hover, &:active, &.active {
-                        background-color: desaturate(lighten($ucdavis-gold, 40%),20%);
-                    }
-                    a {
-                        text-decoration: none;
-                        color: $ucdavis-blue;
-                    }
+            }
+            .dropdown-item {
+                a {
+                    text-decoration: none;
                 }
             }
         }
         &.navbar-tabs {
             overflow-y: hidden;
             height: auto;
-            transition: height 0.5s ease-in;
+            transition: all 0.5s ease-in;
             .dropdown {
                 flex-direction: column;
                 .dropdown-menu {
@@ -67,15 +63,10 @@
                     display: block;
                     visibility: collapse;
                 }
-                &.show {
-                    .dropdown-menu {
-                        visibility: visible;
-                    }
-                }
-                &.show ~ .dropdown {
-                    .dropdown-menu {
-                        visibility: visible;
-                    }
+            }
+            &.show {
+                .dropdown-menu {
+                    visibility: visible;
                 }
             }
         }
@@ -100,18 +91,37 @@
             }
         }
         .navbar-nav {
-            .nav-item{
-                &:hover {
-                    background-color: $ucdavis-gold;
-                }
+            .nav-item {
                 &.active, &:active {
-                    background-color: desaturate(lighten($ucdavis-gold, 40%),20%);
+                    .nav-link {
+                        background-color: desaturate(lighten($ucdavis-gold, 40%),20%);
+                    }
                 }
                 .nav-link, &.nav-link {
+                    &:hover {
+                        background-color: $ucdavis-gold;
+                    }
+                    
                     padding: 1em 1.5em;
                     &, &:hover {
                         color: $ucdavis-blue;
                     }
+                }
+            }
+        }
+        .dropdown {
+            &:hover, &:active, &.active, &.show {
+                background-color: desaturate(lighten($ucdavis-gold, 40%),20%);
+                .dropdown-menu {
+                    background-color: desaturate(lighten($ucdavis-gold, 40%),20%);
+                }                
+            }
+            .dropdown-item {
+                &:hover {
+                    background-color: $ucdavis-gold;
+                }
+                a {
+                    color: $ucdavis-blue;
                 }
             }
         }
@@ -134,10 +144,28 @@
                 z-index: -1;
                 height: 100%;
             }
-            .nav-item {
+            .nav-link {
                 color: white;
                 &:hover {
                     background-color: rgba(255, 255, 255, 0.2);
+                }
+            }
+            &.navbar-tabs {
+                .dropdown {
+                    &:hover {
+                        background-color: rgba(255, 255, 255, 0.1);
+                    }
+                    .dropdown-item {
+                        &:hover {
+                            background-color: rgba(255, 255, 255, 0.2);
+                        }
+                    }
+                }
+                .dropdown-menu, .dropdown-item {
+                    background: transparent;
+                    a {
+                        color: white;
+                    }
                 }
             }
         }

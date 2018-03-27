@@ -597,15 +597,12 @@ a.prettyinpink {
       .navbar .navbar-nav .dropdown .dropdown-menu {
         margin-top: 0;
         border-radius: 0; }
-        .navbar .navbar-nav .dropdown .dropdown-menu .dropdown-item:hover, .navbar .navbar-nav .dropdown .dropdown-menu .dropdown-item:active, .navbar .navbar-nav .dropdown .dropdown-menu .dropdown-item.active {
-          background-color: #f5e0a1; }
-        .navbar .navbar-nav .dropdown .dropdown-menu .dropdown-item a {
-          text-decoration: none;
-          color: #002855; }
+      .navbar .navbar-nav .dropdown .dropdown-item a {
+        text-decoration: none; }
     .navbar .navbar-nav.navbar-tabs {
       overflow-y: hidden;
       height: auto;
-      transition: height 0.5s ease-in; }
+      transition: all 0.5s ease-in; }
       .navbar .navbar-nav.navbar-tabs .dropdown {
         flex-direction: column; }
         .navbar .navbar-nav.navbar-tabs .dropdown .dropdown-menu {
@@ -614,10 +611,8 @@ a.prettyinpink {
           border: none;
           display: block;
           visibility: collapse; }
-        .navbar .navbar-nav.navbar-tabs .dropdown.show .dropdown-menu {
-          visibility: visible; }
-        .navbar .navbar-nav.navbar-tabs .dropdown.show ~ .dropdown .dropdown-menu {
-          visibility: visible; }
+      .navbar .navbar-nav.navbar-tabs.show .dropdown-menu {
+        visibility: visible; }
   .navbar.navbar-default .navbar-toggler > .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
   .navbar.navbar-default .navbar-banner:before {
@@ -631,14 +626,22 @@ a.prettyinpink {
     left: 0;
     z-index: -1;
     height: 100%; }
-  .navbar.navbar-default .navbar-nav .nav-item:hover {
-    background-color: #c99700; }
-  .navbar.navbar-default .navbar-nav .nav-item.active, .navbar.navbar-default .navbar-nav .nav-item:active {
+  .navbar.navbar-default .navbar-nav .nav-item.active .nav-link, .navbar.navbar-default .navbar-nav .nav-item:active .nav-link {
     background-color: #f5e0a1; }
   .navbar.navbar-default .navbar-nav .nav-item .nav-link, .navbar.navbar-default .navbar-nav .nav-item.nav-link {
     padding: 1em 1.5em; }
+    .navbar.navbar-default .navbar-nav .nav-item .nav-link:hover, .navbar.navbar-default .navbar-nav .nav-item.nav-link:hover {
+      background-color: #c99700; }
     .navbar.navbar-default .navbar-nav .nav-item .nav-link, .navbar.navbar-default .navbar-nav .nav-item .nav-link:hover, .navbar.navbar-default .navbar-nav .nav-item.nav-link, .navbar.navbar-default .navbar-nav .nav-item.nav-link:hover {
       color: #002855; }
+  .navbar.navbar-default .dropdown:hover, .navbar.navbar-default .dropdown:active, .navbar.navbar-default .dropdown.active, .navbar.navbar-default .dropdown.show {
+    background-color: #f5e0a1; }
+    .navbar.navbar-default .dropdown:hover .dropdown-menu, .navbar.navbar-default .dropdown:active .dropdown-menu, .navbar.navbar-default .dropdown.active .dropdown-menu, .navbar.navbar-default .dropdown.show .dropdown-menu {
+      background-color: #f5e0a1; }
+  .navbar.navbar-default .dropdown .dropdown-item:hover {
+    background-color: #c99700; }
+  .navbar.navbar-default .dropdown .dropdown-item a {
+    color: #002855; }
   .navbar.navbar-inverted .navbar-nav.container {
     padding-left: 15px; }
   .navbar.navbar-inverted .navbar-nav:before {
@@ -652,10 +655,18 @@ a.prettyinpink {
     left: 0;
     z-index: -1;
     height: 100%; }
-  .navbar.navbar-inverted .navbar-nav .nav-item {
+  .navbar.navbar-inverted .navbar-nav .nav-link {
     color: white; }
-    .navbar.navbar-inverted .navbar-nav .nav-item:hover {
+    .navbar.navbar-inverted .navbar-nav .nav-link:hover {
       background-color: rgba(255, 255, 255, 0.2); }
+  .navbar.navbar-inverted .navbar-nav.navbar-tabs .dropdown:hover {
+    background-color: rgba(255, 255, 255, 0.1); }
+  .navbar.navbar-inverted .navbar-nav.navbar-tabs .dropdown .dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.2); }
+  .navbar.navbar-inverted .navbar-nav.navbar-tabs .dropdown-menu, .navbar.navbar-inverted .navbar-nav.navbar-tabs .dropdown-item {
+    background: transparent; }
+    .navbar.navbar-inverted .navbar-nav.navbar-tabs .dropdown-menu a, .navbar.navbar-inverted .navbar-nav.navbar-tabs .dropdown-item a {
+      color: white; }
 
 table thead {
   border-bottom: 2px solid #c99700; }
