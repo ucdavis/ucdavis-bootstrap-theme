@@ -17,6 +17,20 @@
     padding-right: 1em;
     border-color: $border-darken;
 }
+
+.btn-cal {
+    box-shadow: 0 -3px 0 rgba(0,0,0,.15) inset,0 1px 3px rgba(0,0,0,.08);
+    border-radius: 2px;
+    color: white;
+    background-color: #daaa00;
+    font-family: 'proxima-nova-b';
+    &:hover {
+        box-shadow: 0 -3px 0 rgba(0,0,0,.15) inset,0 3px 6px rgba(0,0,0,.08);
+        transform: translate3d(0, -2px, 0);
+        background-color: #f4be00;
+    }
+}
+
 .btn-primary {
     @include button-color($ucdavis-blue);
     @include hover {
