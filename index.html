@@ -33,16 +33,31 @@
         <div class="container">
           <div class="col-lg-8"><h1>UC Davis App template</h1>
         <p>This is a UC Davis themed template to be used however you wish, it is built with Bootstrap 4, and <a class="prettyinpink" href="http://sass-lang.com">SASS</a></p>
-        <p><a href="#" class="btn btn-warning btn-lg" role="button">Learn more &raquo;</a></p></div>
+        <p><a href="http://github.com/ucdavis/ucdavis-bootstrap-theme" class="btn btn-primary btn-lg" role="button">Download on GitHub &raquo;</a></p></div>
         </div>
     </div>
     <div class="container theme-showcase" role="main">
 
 
     <section>
-      <div class="page-header">
-        <h1>Page-header div in h1</h1>
+      <h1>Page Headers:</h1>
+      <p>Colors can be applied using the <code>bg-*</code> styles</p>
+      <div class="example">
+        <div class="page-header">
+          <h1>Page-header div in h1</h1>
+        </div>
+        <div class="page-header">
+          <h1 class="bg-western-redbud">Pink Page Header</h1>
+        </div>
       </div>
+      <pre><code>
+        &ltdiv class="page-header"&gt
+          &lth1&gtPage-header div in h1&lt/h1&gt
+        &lt/div&gt
+        &ltdiv class="page-header">
+          &lth1 class="bg-western-redbud">Pink Page Header&lt/h1>
+        &lt/div>
+      </code></pre>
 <!--       <img src="/media/solo.svg"> -->
       <div class="example">
         <h1>h1. Bootstrap heading <small>Secondary text</small></h1>
@@ -52,6 +67,14 @@
         <h5>h5. Bootstrap heading <small>Secondary text</small></h5>
         <h6>h6. Bootstrap heading <small>Secondary text</small></h6>
       </div>
+      <pre><code>
+        &lth1>h1. Bootstrap heading &ltsmall>Secondary text&lt/small>&lt/h1>
+        &lth2>h2. Bootstrap heading &ltsmall>Secondary text&lt/small>&lt/h2>
+        &lth3>h3. Bootstrap heading &ltsmall>Secondary text&lt/small>&lt/h3>
+        &lth4>h4. Bootstrap heading &ltsmall>Secondary text&lt/small>&lt/h4>
+        &lth5>h5. Bootstrap heading &ltsmall>Secondary text&lt/small>&lt/h5>
+        &lth6>h6. Bootstrap heading &ltsmall>Secondary text&lt/small>&lt/h6>
+      </code></pre>
       <h1>You also have the option of underlining text.</h1>
       <h2 class="text-muted">Apply colors using <code>underline-&ltcolor&gt</code></h2>
       <p>Note, applying <code>.text-centered</code> produces a different style of underline.</p>
