@@ -441,8 +441,8 @@
       <div class="page-header">
         <h1>Navbars</h1>
       </div>
-      <h1>Modifiers:</h1>
-      <p>Add <code>.navbar-tabs</code> to items to simulate tabbed dropdowns</p>
+      <h1>Sizing</h1>
+      <p>Large branding is available with <code>.navbar-banner-lg</code></p>
       <div class="example">
       <div class="navbar navbar-default navbar-expand-md" role="navigation">
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-collapse">
@@ -473,6 +473,41 @@
           </ul>
         </div><!--/.nav-collapse -->
     </div>
+    </div>
+    <pre><code>
+      &ltdiv class="navbar navbar-default navbar-expand-md" role="navigation">
+      &ltbutton type="button" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+        &ltspan class="navbar-toggler-icon">&lt/span>
+      &lt/button>
+      &ltdiv class="navbar-banner">
+        &ltdiv class="container">
+          &lta class="navbar-brand navbar-brand" href="#">&ltimg src="/media/ucdavis_logo.png">&lt/a>
+        &lt/div>
+      &lt/div>
+      &ltdiv class="navbar-collapse collapse">
+        &ltul class="nav navbar-nav container">
+          &ltli class="nav-item active">&lta class="nav-link" href="#">HOME&lt/a>&lt/li>
+          &ltli class="nav-item">&lta class="nav-link" href="#about">ABOUT&lt/a>&lt/li>
+          &ltli class="nav-item">&lta class="nav-link" href="#contact">CONTACT&lt/a>&lt/li>
+          &ltli class="nav-item dropdown">
+            &lta href="#" class="nav-link dropdown-toggle" role="button" id="navbarDropdown"  data-toggle="dropdown">DROPDOWN&ltb class="caret">&lt/b>&lt/a>
+            &ltul class="dropdown-menu">
+              &ltli class="dropdown-item">&lta href="#">Action&lt/a>&lt/li>
+              &ltli class="dropdown-item">&lta href="#">Another action&lt/a>&lt/li>
+              &ltli class="dropdown-item">&lta href="#">Something else here&lt/a>&lt/li>
+              &ltli class="dropdown-divider">&lt/li>
+              &ltli class="dropdown-header">Nav header&lt/li>
+              &ltli class="dropdown-item">&lta href="#">Separated link&lt/a>&lt/li>
+              &ltli class="dropdown-item">&lta href="#">One more separated link&lt/a>&lt/li>
+            &lt/ul>
+          &lt/li>
+        &lt/ul>
+      &lt/div>&lt!--/.nav-collapse -->
+  &lt/div>
+    </code></pre>
+    <h1>Styles:</h1>
+    <p>Use <code>.navbar-inverted</code> for a different color set.</p>
+    <div class="example">
     <div class="navbar navbar-inverted navbar-expand-md" role="navigation">
       <button type="button" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-collapse">
         <span class="navbar-toggler-icon"></span>
@@ -502,6 +537,41 @@
         </ul>
       </div><!--/.nav-collapse -->
   </div>
+  </div>
+  <pre><code>
+    &ltdiv class="navbar navbar-inverted navbar-expand-md" role="navigation">
+    &ltbutton type="button" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+      &ltspan class="navbar-toggler-icon">&lt/span>
+    &lt/button>
+    &ltdiv class="navbar-banner">
+      &ltdiv class="container">
+        &lta class="navbar-brand navbar-brand" href="#">&ltimg src="/media/ucdavis_logo_blue.png" />&lt/a>
+      &lt/div>
+    &lt/div>
+    &ltdiv class="navbar-collapse collapse">
+      &ltul class="nav navbar-nav container">
+        &ltli class="nav-item active">&lta class="nav-link" href="#">HOME&lt/a>&lt/li>
+        &ltli class="nav-item">&lta class="nav-link" href="#about">ABOUT&lt/a>&lt/li>
+        &ltli class="nav-item">&lta class="nav-link" href="#contact">CONTACT&lt/a>&lt/li>
+        &ltli class="nav-item dropdown">
+          &lta href="#" class="nav-link dropdown-toggle" role="button" id="navbarDropdown"  data-toggle="dropdown">DROPDOWN&ltb class="caret">&lt/b>&lt/a>
+          &ltul class="dropdown-menu">
+            &ltli class="dropdown-item">&lta href="#">Action&lt/a>&lt/li>
+            &ltli class="dropdown-item">&lta href="#">Another action&lt/a>&lt/li>
+            &ltli class="dropdown-item">&lta href="#">Something else here&lt/a>&lt/li>
+            &ltli class="dropdown-divider">&lt/li>
+            &ltli class="dropdown-header">Nav header&lt/li>
+            &ltli class="dropdown-item">&lta href="#">Separated link&lt/a>&lt/li>
+            &ltli class="dropdown-item">&lta href="#">One more separated link&lt/a>&lt/li>
+          &lt/ul>
+        &lt/li>
+      &lt/ul>
+    &lt/div>&lt!--/.nav-collapse -->
+&lt/div>
+  </code></pre>
+  <h1>Modifiers:</h1>
+  <p>Add <code>.navbar-tabs</code> to items to simulate tabbed dropdowns</p>
+  <div class="example">
   <div class="navbar navbar-default navbar-expand-md" role="navigation">
       <button type="button" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-collapse">
         <span class="navbar-toggler-icon"></span>
@@ -542,6 +612,50 @@
         </ul>
       </div><!--/.nav-collapse -->
   </div>
+</div>
+<pre><code>
+  &ltdiv class="navbar navbar-default navbar-expand-md" role="navigation">
+    &ltbutton type="button" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+      &ltspan class="navbar-toggler-icon">&lt/span>
+    &lt/button>
+    &ltdiv class="navbar-banner">
+      &ltdiv class="container">
+        &lta class="navbar-brand navbar-brand" href="#">&ltimg src="/media/ucdavis_logo.png">&lt/a>
+      &lt/div>
+    &lt/div>
+    &ltdiv class="navbar-collapse collapse">
+      &ltul class="nav navbar-nav navbar-tabs container">
+        &ltli class="nav-item active">&lta class="nav-link" href="#">HOME&lt/a>&lt/li>
+        &ltli class="nav-item">&lta class="nav-link" href="#about">ABOUT&lt/a>&lt/li>
+        &ltli class="nav-item dropdown">
+            &lta href="#" class="nav-link dropdown-toggle" role="button" id="navbarDropdown" data-target=".navbar-tabs" data-toggle="dropdown">DROPDOWN&ltb class="caret">&lt/b>&lt/a>
+            &ltul class="dropdown-menu">
+              &ltli class="dropdown-item">&lta href="#">Action&lt/a>&lt/li>
+              &ltli class="dropdown-item">&lta href="#">Another action&lt/a>&lt/li>
+              &ltli class="dropdown-item">&lta href="#">Something else here&lt/a>&lt/li>
+              &ltli class="dropdown-divider">&lt/li>
+              &ltli class="dropdown-header">Nav header&lt/li>
+              &ltli class="dropdown-item">&lta href="#">Separated link&lt/a>&lt/li>
+              &ltli class="dropdown-item">&lta href="#">One more separated link&lt/a>&lt/li>
+            &lt/ul>
+          &lt/li>
+        &ltli class="nav-item dropdown">
+          &lta href="#" class="nav-link dropdown-toggle" role="button" id="navbarDropdown"  data-target=".navbar-tabs" data-toggle="dropdown">DROPDOWN&ltb class="caret">&lt/b>&lt/a>
+          &ltul class="dropdown-menu">
+            &ltli class="dropdown-item">&lta href="#">Action&lt/a>&lt/li>
+            &ltli class="dropdown-item">&lta href="#">Another action&lt/a>&lt/li>
+            &ltli class="dropdown-item">&lta href="#">Something else here&lt/a>&lt/li>
+            &ltli class="dropdown-divider">&lt/li>
+            &ltli class="dropdown-header">Nav header&lt/li>
+            &ltli class="dropdown-item">&lta href="#">Separated link&lt/a>&lt/li>
+            &ltli class="dropdown-item">&lta href="#">One more separated link&lt/a>&lt/li>
+          &lt/ul>
+        &lt/li>
+      &lt/ul>
+    &lt/div>&lt!--/.nav-collapse -->
+&lt/div>
+</code></pre>
+<div class="example">
   <div class="navbar navbar-inverted navbar-expand-md" role="navigation">
     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-collapse">
       <span class="navbar-toggler-icon"></span>
@@ -584,104 +698,7 @@
 </div>
   </div>
   <pre><code>
-    &ltdiv class="navbar navbar-default navbar-expand-md" role="navigation">
-      &ltbutton type="button" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-collapse">
-        &ltspan class="navbar-toggler-icon">&lt/span>
-      &lt/button>
-      &ltdiv class="navbar-banner">
-        &ltdiv class="container">
-          &lta class="navbar-brand navbar-brand" href="#">&ltimg src="/media/ucdavis_logo.png">&lt/a>
-        &lt/div>
-      &lt/div>
-      &ltdiv class="navbar-collapse collapse">
-        &ltul class="nav navbar-nav container">
-          &ltli class="nav-item active">&lta class="nav-link" href="#">HOME&lt/a>&lt/li>
-          &ltli class="nav-item">&lta class="nav-link" href="#about">ABOUT&lt/a>&lt/li>
-          &ltli class="nav-item">&lta class="nav-link" href="#contact">CONTACT&lt/a>&lt/li>
-          &ltli class="nav-item dropdown">
-            &lta href="#" class="nav-link dropdown-toggle" role="button" id="navbarDropdown"  data-toggle="dropdown">DROPDOWN&ltb class="caret">&lt/b>&lt/a>
-            &ltul class="dropdown-menu">
-              &ltli class="dropdown-item">&lta href="#">Action&lt/a>&lt/li>
-              &ltli class="dropdown-item">&lta href="#">Another action&lt/a>&lt/li>
-              &ltli class="dropdown-item">&lta href="#">Something else here&lt/a>&lt/li>
-              &ltli class="dropdown-divider">&lt/li>
-              &ltli class="dropdown-header">Nav header&lt/li>
-              &ltli class="dropdown-item">&lta href="#">Separated link&lt/a>&lt/li>
-              &ltli class="dropdown-item">&lta href="#">One more separated link&lt/a>&lt/li>
-            &lt/ul>
-          &lt/li>
-        &lt/ul>
-      &lt/div>&lt!--/.nav-collapse -->
-  &lt/div>
-  &ltdiv class="navbar navbar-inverted navbar-expand-md" role="navigation">
-    &ltbutton type="button" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-collapse">
-      &ltspan class="navbar-toggler-icon">&lt/span>
-    &lt/button>
-    &ltdiv class="navbar-banner">
-      &ltdiv class="container">
-        &lta class="navbar-brand navbar-brand" href="#">&ltimg src="/media/ucdavis_logo_blue.png" />&lt/a>
-      &lt/div>
-    &lt/div>
-    &ltdiv class="navbar-collapse collapse">
-      &ltul class="nav navbar-nav container">
-        &ltli class="nav-item active">&lta class="nav-link" href="#">HOME&lt/a>&lt/li>
-        &ltli class="nav-item">&lta class="nav-link" href="#about">ABOUT&lt/a>&lt/li>
-        &ltli class="nav-item">&lta class="nav-link" href="#contact">CONTACT&lt/a>&lt/li>
-        &ltli class="nav-item dropdown">
-          &lta href="#" class="nav-link dropdown-toggle" role="button" id="navbarDropdown"  data-toggle="dropdown">DROPDOWN&ltb class="caret">&lt/b>&lt/a>
-          &ltul class="dropdown-menu">
-            &ltli class="dropdown-item">&lta href="#">Action&lt/a>&lt/li>
-            &ltli class="dropdown-item">&lta href="#">Another action&lt/a>&lt/li>
-            &ltli class="dropdown-item">&lta href="#">Something else here&lt/a>&lt/li>
-            &ltli class="dropdown-divider">&lt/li>
-            &ltli class="dropdown-header">Nav header&lt/li>
-            &ltli class="dropdown-item">&lta href="#">Separated link&lt/a>&lt/li>
-            &ltli class="dropdown-item">&lta href="#">One more separated link&lt/a>&lt/li>
-          &lt/ul>
-        &lt/li>
-      &lt/ul>
-    &lt/div>&lt!--/.nav-collapse -->
-&lt/div>
-&ltdiv class="navbar navbar-default navbar-expand-md" role="navigation">
-    &ltbutton type="button" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-collapse">
-      &ltspan class="navbar-toggler-icon">&lt/span>
-    &lt/button>
-    &ltdiv class="navbar-banner">
-      &ltdiv class="container">
-        &lta class="navbar-brand navbar-brand" href="#">&ltimg src="/media/ucdavis_logo.png">&lt/a>
-      &lt/div>
-    &lt/div>
-    &ltdiv class="navbar-collapse collapse">
-      &ltul class="nav navbar-nav navbar-tabs container">
-        &ltli class="nav-item active">&lta class="nav-link" href="#">HOME&lt/a>&lt/li>
-        &ltli class="nav-item">&lta class="nav-link" href="#about">ABOUT&lt/a>&lt/li>
-        &ltli class="nav-item dropdown">
-            &lta href="#" class="nav-link dropdown-toggle" role="button" id="navbarDropdown" data-target=".navbar-tabs" data-toggle="dropdown">DROPDOWN&ltb class="caret">&lt/b>&lt/a>
-            &ltul class="dropdown-menu">
-              &ltli class="dropdown-item">&lta href="#">Action&lt/a>&lt/li>
-              &ltli class="dropdown-item">&lta href="#">Another action&lt/a>&lt/li>
-              &ltli class="dropdown-item">&lta href="#">Something else here&lt/a>&lt/li>
-              &ltli class="dropdown-divider">&lt/li>
-              &ltli class="dropdown-header">Nav header&lt/li>
-              &ltli class="dropdown-item">&lta href="#">Separated link&lt/a>&lt/li>
-              &ltli class="dropdown-item">&lta href="#">One more separated link&lt/a>&lt/li>
-            &lt/ul>
-          &lt/li>
-        &ltli class="nav-item dropdown">
-          &lta href="#" class="nav-link dropdown-toggle" role="button" id="navbarDropdown"  data-target=".navbar-tabs" data-toggle="dropdown">DROPDOWN&ltb class="caret">&lt/b>&lt/a>
-          &ltul class="dropdown-menu">
-            &ltli class="dropdown-item">&lta href="#">Action&lt/a>&lt/li>
-            &ltli class="dropdown-item">&lta href="#">Another action&lt/a>&lt/li>
-            &ltli class="dropdown-item">&lta href="#">Something else here&lt/a>&lt/li>
-            &ltli class="dropdown-divider">&lt/li>
-            &ltli class="dropdown-header">Nav header&lt/li>
-            &ltli class="dropdown-item">&lta href="#">Separated link&lt/a>&lt/li>
-            &ltli class="dropdown-item">&lta href="#">One more separated link&lt/a>&lt/li>
-          &lt/ul>
-        &lt/li>
-      &lt/ul>
-    &lt/div>&lt!--/.nav-collapse -->
-&lt/div>
+
 &ltdiv class="navbar navbar-inverted navbar-expand-md" role="navigation">
   &ltbutton type="button" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-collapse">
     &ltspan class="navbar-toggler-icon">&lt/span>
