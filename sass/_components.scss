@@ -44,6 +44,8 @@ form {
     align-items: center;
     transition: background-color 0.3s ease-in;
     width: 25rem;
+    text-decoration: none !important;
+    color: $ucdavis-blue !important;
     .focus-logo {
         flex-basis: 25%;
         flex-shrink: 0;
