@@ -37,3 +37,38 @@ form {
         }
     }
 }
+.focus-block {
+    padding: 1em 1.5em;
+    display: flex;
+    flex-wrap: none;
+    align-items: center;
+    transition: background-color 0.3s ease-in;
+    width: 25rem;
+    .focus-logo {
+        flex-basis: 25%;
+        flex-shrink: 0;
+        img {
+            max-width: 100%;
+        }
+    }
+    .focus-body {
+        margin-left: 1em;
+        flex-shrink: 0;
+        flex-grow: 1;
+        font-size: 1.25rem !important;
+        * {
+            font-size: inherit;
+        }
+    }
+    &:hover{
+        background-color: desaturate(lighten($ucdavis-gold, 40%), 20%);
+        cursor: pointer;
+    }
+    &.focus-block-lg {
+        width: 35rem;
+        .focus-body {
+            font-size: 2.25rem !important;
+        }
+    }
+    
+}
