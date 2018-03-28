@@ -14,7 +14,10 @@
     border-radius: 0;
     .card-header {
         font-weight: bold;
+        background-color: transparent;
         .card-title {
+            font-size: 1.25rem;
+            font-weight: inherit;
             color: inherit;
         }
     }
@@ -37,6 +40,7 @@
             }
         }
     }
+    
     &.card-primary {
         @include bold-colors($ucdavis-blue);
         .card-body {

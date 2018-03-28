@@ -1,7 +1,7 @@
 # ucdavis-bootstrap-theme
 Default Styles and Snippets for UC Davis Web Applications
 
-#Install
+# Install
 
 Copy ucdavis.css into your preferred assets directory, and include it *after* bootstrap.
 

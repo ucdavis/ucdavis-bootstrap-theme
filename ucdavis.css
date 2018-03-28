@@ -371,8 +371,11 @@ a.prettyinpink {
 .card {
   border-radius: 0; }
   .card .card-header {
-    font-weight: bold; }
+    font-weight: bold;
+    background-color: transparent; }
     .card .card-header .card-title {
+      font-size: 1.25rem;
+      font-weight: inherit;
       color: inherit; }
   .card.unitrans-red {
     color: #fff;
