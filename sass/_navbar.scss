@@ -62,7 +62,6 @@
         &.navbar-tabs {
             overflow-y: hidden;
             height: auto;
-            transition: all 0.5s ease-in;
             .dropdown {
                 .dropdown-menu {
                     position: static;
@@ -72,7 +71,7 @@
                     visibility: collapse;
                 }
             }
-            &.show, &.collapsing, .dropdown.show {
+            &.show, &.collapsing {
                 .dropdown-menu, .dropdown-menu.show {
                     visibility: visible;
                 }
