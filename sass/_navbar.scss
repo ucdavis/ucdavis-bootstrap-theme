@@ -7,8 +7,7 @@
         right: 0;
         z-index: 1;
         top: 0;
-        margin-top: 0.5rem;
-        
+        margin-top: 0.6em;
     }
     .navbar-banner {
         font-size: 1.25rem;
@@ -62,6 +61,7 @@
         &.navbar-tabs {
             overflow-y: hidden;
             height: auto;
+            transition: max-height 0.5s ease-in-out;
             .dropdown {
                 .dropdown-menu {
                     position: static;
@@ -72,8 +72,34 @@
                 }
             }
             &.show, &.collapsing {
-                .dropdown-menu, .dropdown-menu.show {
+                .dropdown-menu {
                     visibility: visible;
+                }
+            }
+            .dropdown-menu.show {
+                visibility: visible;
+            }
+        }
+    }
+    &.navbar-expand {
+        @each $breakpoint in map-keys($grid-breakpoints) {
+            $next: breakpoint-next($breakpoint, $grid-breakpoints);
+            $infix: breakpoint-infix($next, $grid-breakpoints);
+        
+            &#{$infix} {
+                @include media-breakpoint-up($next) {
+                    .navbar-tabs {
+                        max-height: 3.5em;
+                        .dropdown-menu {                
+                            transition: visibility 0.55s ease-in-out;
+                        }
+                        &:hover, &.show, &.collapsing {
+                            max-height: 600px;
+                            .dropdown-menu {
+                                visibility: visible;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -118,7 +144,7 @@
             }
             &.navbar-tabs {
                 .dropdown {
-                    &:hover, &:active, &.active, &.show {
+                    &:hover {
                         background-color: desaturate(lighten($ucdavis-gold, 40%),20%);
                         .dropdown-menu {
                             background-color: desaturate(lighten($ucdavis-gold, 40%),20%);
