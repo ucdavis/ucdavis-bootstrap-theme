@@ -62,6 +62,7 @@
         &.navbar-tabs {
             overflow-y: hidden;
             height: auto;
+            transition: max-height 0.5s ease-in-out;
             .dropdown {
                 .dropdown-menu {
                     position: static;
@@ -69,11 +70,35 @@
                     border: none;
                     display: block;
                     visibility: collapse;
+                    transition: visibility 0.55s ease-in-out;
                 }
             }
             &.show, &.collapsing {
-                .dropdown-menu, .dropdown-menu.show {
+                .dropdown-menu {
                     visibility: visible;
+                }
+            }
+            .dropdown-menu.show {
+                visibility: visible;
+            }
+        }
+    }
+    &.navbar-expand {
+        @each $breakpoint in map-keys($grid-breakpoints) {
+            $next: breakpoint-next($breakpoint, $grid-breakpoints);
+            $infix: breakpoint-infix($next, $grid-breakpoints);
+        
+            &#{$infix} {
+                @include media-breakpoint-up($next) {
+                    .navbar-tabs {
+                        max-height: 3.5em;
+                        &:hover, &.show, &.collapsing {
+                            max-height: 600px;
+                            .dropdown-menu {
+                                visibility: visible;
+                            }
+                        }
+                    }
                 }
             }
         }
