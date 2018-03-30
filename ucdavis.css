@@ -599,7 +599,8 @@ a.prettyinpink {
         padding-top: 0;
         border: none;
         display: block;
-        visibility: collapse; }
+        visibility: collapse;
+        transition: visibility 0.55s ease-in-out; }
       .navbar .navbar-nav.navbar-tabs.show .dropdown-menu, .navbar .navbar-nav.navbar-tabs.collapsing .dropdown-menu {
         visibility: visible; }
       .navbar .navbar-nav.navbar-tabs .dropdown-menu.show {

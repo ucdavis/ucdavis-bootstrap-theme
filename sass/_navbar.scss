@@ -69,6 +69,7 @@
                     border: none;
                     display: block;
                     visibility: collapse;
+                    transition: visibility 0.55s ease-in-out;
                 }
             }
             &.show, &.collapsing {
