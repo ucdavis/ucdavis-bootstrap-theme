@@ -27,7 +27,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   color: #002855;
-  font-family: "proxima-nova-r", Lucida Grande, Lucida Sans, Helvetica Neue, Helvetica Std, Helvetica, Univers, Arial, sans-serif; }
+  font-family: "proxima-nova-b", serif; }
 
 h1, .h1, h2, .h2, h3, .h3 {
   margin-top: 1rem;
@@ -48,7 +48,8 @@ h4 {
 p {
   font-family: "proxima-nova-r", Lucida Grande, Lucida Sans, Helvetica Neue, Helvetica Std, Helvetica, Univers, Arial, sans-serif;
   line-height: 1.625;
-  letter-spacing: .025rem; }
+  letter-spacing: .025rem;
+  color: rgba(67, 67, 67, 0.99); }
 
 b, strong, th {
   font-weight: 800; }
@@ -57,8 +58,7 @@ label {
   font-weight: 500; }
 
 .lead {
-  font-weight: 700;
-  color: #b7bec5; }
+  font-family: "proxima-nova-b", serif; }
 
 .jumbotron h1, .jumbotron .h1 {
   font-size: 5rem; }
@@ -739,9 +739,9 @@ form {
   border-color: rgba(0, 0, 0, 0.1);
   color: #002855; }
   .list-group .list-group-item:hover {
-    background-color: #f5e0a1; }
+    background-color: #f7edd1; }
   .list-group .list-group-item.active {
-    background-color: #c99700; }
+    background-color: #f5e0a1; }
 
 .focus-block {
   padding: 1em 1.5em;

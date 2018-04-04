@@ -30,10 +30,10 @@ form {
         border-color: $border-darken;
         color: $ucdavis-blue;
         &:hover {
-            background-color: desaturate(lighten($ucdavis-gold, 40%), 20%);
+            background-color: desaturate(lighten($ucdavis-gold, 50%), 30%);
         }
         &.active {
-            background-color: $ucdavis-gold;
+            background-color: desaturate(lighten($ucdavis-gold, 40%), 20%);
         }
     }
 }
