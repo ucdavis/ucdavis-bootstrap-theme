@@ -578,10 +578,7 @@ a.prettyinpink {
     position: relative;
     width: 100%; }
     .navbar .navbar-nav .nav-item .nav-link, .navbar .navbar-nav .nav-item.nav-link {
-      padding: 1em 1.5em;
-      color: inherit; }
-    .navbar .navbar-nav .nav-link {
-      color: inherit; }
+      padding: 1em 1.5em; }
     .navbar .navbar-nav .dropdown {
       display: flex;
       flex-direction: column; }
