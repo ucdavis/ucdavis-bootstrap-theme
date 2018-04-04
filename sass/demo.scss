@@ -1,4 +1,5 @@
 @import "ucdavis";
+@import "githubFonts";
 @mixin swatch-color($name, $color) {
     &.#{$name} {
         background-color: $color;
