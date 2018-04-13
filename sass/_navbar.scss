@@ -1,80 +1,82 @@
 .navbar {
-    padding: 0;
-    flex-wrap: wrap;
-    align-items: baseline;
-    .navbar-toggler {
-        position: absolute;
-        right: 0;
-        z-index: 1;
-        top: 0;
-        margin-top: 0.6em;
-    }
-    .navbar-banner {
-        font-size: 1.25rem;
-        &.navbar-banner-lg {
-            font-size: 2.25rem;
-            padding: 0.75em 1em;
-            .navbar-toggler {
-                margin-top: 2em;
-            }
+    &.navbar-default, &.navbar-inverted {
+        padding: 0;
+        flex-wrap: wrap;
+        align-items: baseline;
+        .navbar-toggler {
+            position: absolute;
+            right: 0;
+            z-index: 1;
+            top: 0;
+            margin-top: 0.6em;
         }
-        padding: 0.5em 1em;
-        flex-basis: 100%;
-        flex-shrink: 0;
-        display: block;
-        position: relative;
-        .navbar-brand {
-            max-width: 10em;
-            font-size: inherit;
-            img {
-                max-width: 100%;
-            }
-     
-        }
-    }
-    .navbar-nav {
-        display: inline-flex;
-        position: relative;
-        width: 100%;
-        .nav-item {
-            .nav-link, &.nav-link {
-                padding: 1em 1.5em;
-            }
-        }
-        .dropdown {
-            display: flex;
-            flex-direction: column;
-            .dropdown-menu {
-                margin-top: 0;
-                border-radius: 0;
-            }
-            .dropdown-item {
-                a {
-                    text-decoration: none;
+        .navbar-banner {
+            font-size: 1.25rem;
+            &.navbar-banner-lg {
+                font-size: 2.25rem;
+                padding: 0.75em 1em;
+                .navbar-toggler {
+                    margin-top: 2em;
                 }
             }
+            padding: 0.5em 1em;
+            flex-basis: 100%;
+            flex-shrink: 0;
+            display: block;
+            position: relative;
+            .navbar-brand {
+                max-width: 10em;
+                font-size: inherit;
+                img {
+                    max-width: 100%;
+                }
+        
+            }
         }
-        &.navbar-tabs {
-            overflow-y: hidden;
-            height: auto;
-            transition: max-height 0.5s ease-in-out;
+        .navbar-nav {
+            display: inline-flex;
+            position: relative;
+            width: 100%;
+            .nav-item {
+                .nav-link, &.nav-link {
+                    padding: 1em 1.5em;
+                }
+            }
             .dropdown {
+                display: flex;
+                flex-direction: column;
                 .dropdown-menu {
-                    position: static;
-                    padding-top: 0;
-                    border: none;
-                    display: block;
-                    visibility: collapse;
-                    transition: visibility 0.55s ease-in-out;
+                    margin-top: 0;
+                    border-radius: 0;
+                }
+                .dropdown-item {
+                    a {
+                        text-decoration: none;
+                    }
                 }
             }
-            &.show, &.collapsing {
-                .dropdown-menu {
+            &.navbar-tabs {
+                overflow-y: hidden;
+                height: auto;
+                transition: max-height 0.5s ease-in-out;
+                .dropdown {
+                    .dropdown-menu {
+                        position: static;
+                        padding-top: 0;
+                        border: none;
+                        display: block;
+                        visibility: collapse;
+                        transition: visibility 0.55s ease-in-out;
+                    }
+                }
+                &.show, &.collapsing {
+                    .dropdown-menu {
+                        visibility: visible;
+                    }
+                }
+                .dropdown-menu.show {
                     visibility: visible;
                 }
-            }
-            .dropdown-menu.show {
-                visibility: visible;
             }
         }
     }
