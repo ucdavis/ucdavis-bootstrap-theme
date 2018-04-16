@@ -3,6 +3,13 @@
 @mixin button-color($color) {
     background-color: $color;
     color: white;
+    border-color: $color;
+}
+
+@mixin outline-color($color) {
+    background-color: transparent;
+    color: $color;
+    border-color: $color;
 }
 
 .btn {
@@ -16,6 +23,9 @@
     padding-left: 1em;
     padding-right: 1em;
     border-color: $border-darken;
+    &:disabled, &.disabled {
+        border-style: dotted;
+    }
 }
 
 .btn-cal {
@@ -36,6 +46,9 @@
     @include hover {
         background-color: desaturate($color: lighten($color: $ucdavis-blue, $amount: 20%), $amount: 50%);
     }
+    &:disabled, &.disabled {
+        @include outline-color($ucdavis-blue);
+    }
 }
 
 .btn-secondary {
@@ -46,6 +59,11 @@
     &:hover {
         background-color: lighten($main-color, 10%);
         border-color: transparent;
+        color: lighten($ucdavis-blue, 10%);
+    }
+    &.disabled, &:disabled {
+        background-color: transparent;
+        border-color: $main-color;
         color: lighten($ucdavis-blue, 10%);
     }
     &:not(:disabled):not(.disabled):active, &.active {
@@ -60,12 +78,18 @@
     @include hover {
         background-color: saturate($color: darken($color: $sunny-grass, $amount: 5%), $amount: 10%);
     }
+    &:disabled, &.disabled {
+        @include outline-color($sunny-grass);
+    }
 }
 
 .btn-info {
     @include button-color($sky-blue);
     @include hover {
         background-color: desaturate($color: lighten($color: $sky-blue, $amount: 10%), $amount: 50%);
+    }
+    &:disabled, &.disabled {
+        @include outline-color($sky-blue);
     }
 }
 
@@ -75,12 +99,18 @@
     @include hover {
         background-color: saturate($color: lighten($color: $golden-lupine, $amount: 10%), $amount: 20%);
     }
+    &:disabled, &.disabled {
+        @include outline-color($golden-lupine);
+    }
 }
 
 .btn-danger {
     @include button-color($unitrans-red);
     @include hover {
         background-color: saturate($color: lighten($color: $unitrans-red, $amount: 10%), $amount: 10%);
+    }
+    &:disabled, &.disabled {
+        @include outline-color($unitrans-red);
     }
 }
 

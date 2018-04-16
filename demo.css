@@ -264,6 +264,8 @@ a.prettyinpink {
   border-color: rgba(0, 0, 0, 0.1); }
   .btn:focus, .btn.focus {
     box-shadow: none !important; }
+  .btn:disabled, .btn.disabled {
+    border-style: dotted; }
 
 .btn-cal {
   box-shadow: 0 -3px 0 rgba(0, 0, 0, 0.15) inset, 0 1px 3px rgba(0, 0, 0, 0.08);
@@ -278,9 +280,14 @@ a.prettyinpink {
 
 .btn-primary {
   background-color: #002855;
-  color: white; }
+  color: white;
+  border-color: #002855; }
   .btn-primary:hover {
     background-color: #2f5b8c; }
+  .btn-primary:disabled, .btn-primary.disabled {
+    background-color: transparent;
+    color: #002855;
+    border-color: #002855; }
 
 .btn-secondary {
   background-color: #f5e0a1;
@@ -290,6 +297,10 @@ a.prettyinpink {
     background-color: #faefce;
     border-color: transparent;
     color: #004088; }
+  .btn-secondary.disabled, .btn-secondary:disabled {
+    background-color: transparent;
+    border-color: #f5e0a1;
+    color: #004088; }
   .btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary.active {
     background-color: #f5e0a1;
     color: #004088;
@@ -297,28 +308,48 @@ a.prettyinpink {
 
 .btn-success {
   background-color: #78be20;
-  color: white; }
+  color: white;
+  border-color: #78be20; }
   .btn-success:hover {
     background-color: #6bb212; }
+  .btn-success:disabled, .btn-success.disabled {
+    background-color: transparent;
+    color: #78be20;
+    border-color: #78be20; }
 
 .btn-info {
   background-color: #00b5e2;
-  color: white; }
+  color: white;
+  border-color: #00b5e2; }
   .btn-info:hover {
     background-color: #50aec5; }
+  .btn-info:disabled, .btn-info.disabled {
+    background-color: transparent;
+    color: #00b5e2;
+    border-color: #00b5e2; }
 
 .btn-warning {
   background-color: #ffcd00;
   color: white;
+  border-color: #ffcd00;
   color: black; }
   .btn-warning:hover {
     background-color: #ffd733; }
+  .btn-warning:disabled, .btn-warning.disabled {
+    background-color: transparent;
+    color: #ffcd00;
+    border-color: #ffcd00; }
 
 .btn-danger {
   background-color: #ba0c2f;
-  color: white; }
+  color: white;
+  border-color: #ba0c2f; }
   .btn-danger:hover {
     background-color: #f60334; }
+  .btn-danger:disabled, .btn-danger.disabled {
+    background-color: transparent;
+    color: #ba0c2f;
+    border-color: #ba0c2f; }
 
 .btn-link, .btn-link:hover, .btn-link:focus, .btn-link.focus {
   border: 1px solid #DADADA; }
