@@ -609,7 +609,8 @@ a.prettyinpink {
   .navbar.navbar-default .navbar-row, .navbar.navbar-inverted .navbar-row {
     width: 100%;
     position: relative;
-    box-shadow: 0 2px 1px rgba(0, 40, 85, 0.15); }
+    box-shadow: 0 2px 1px rgba(0, 40, 85, 0.15);
+    padding: 0 1rem; }
   .navbar.navbar-default .navbar-nav, .navbar.navbar-inverted .navbar-nav {
     display: inline-flex; }
     .navbar.navbar-default .navbar-nav .nav-item .nav-link, .navbar.navbar-default .navbar-nav .nav-item.nav-link, .navbar.navbar-inverted .navbar-nav .nav-item .nav-link, .navbar.navbar-inverted .navbar-nav .nav-item.nav-link {
