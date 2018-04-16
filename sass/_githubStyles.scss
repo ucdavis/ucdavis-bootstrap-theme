@@ -21,14 +21,14 @@
  .navbar-inverted {
 	.navbar-nav {
 		&:before{
-			background: url("media/global-header-bg.svg");
+			background: url("media/global-header-bg.svg") !important;
 		}
 	}
 }
 .navbar-default {
 	.navbar-banner {
 		&:before{
-			background: url("media/global-header-bg.svg");
+			background: url("media/global-header-bg.svg") !important;
 		}
 	}
 }
