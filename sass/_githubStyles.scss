@@ -18,3 +18,17 @@
 	font-weight: normal;
 	font-style: normal;
  }
+ .navbar-inverted {
+	.navbar-nav {
+		&:before{
+			background: url("media/global-header-bg.svg");
+		}
+	}
+}
+.navbar-default {
+	.navbar-banner {
+		&:before{
+			background: url("media/global-header-bg.svg");
+		}
+	}
+}

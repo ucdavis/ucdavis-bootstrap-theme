@@ -109,7 +109,7 @@
         }
         .navbar-banner {
             &:before{
-                background: url("./media/global-header-bg.svg"),
+                background: url("/media/global-header-bg.svg"),
                 linear-gradient(to right, #183357, #d9b337);
                 background-repeat: no-repeat;
                 background-size: cover;
@@ -180,7 +180,7 @@
                 padding-left: 15px;
             }
             &:before{
-                background: url("./media/global-header-bg.svg"),
+                background: url("/media/global-header-bg.svg"),
                 linear-gradient(to right, #183357, #d9b337);
                 background-repeat: no-repeat;
                 background-position: center top;

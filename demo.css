@@ -680,7 +680,7 @@ a.prettyinpink {
 .navbar.navbar-default .navbar-toggler > .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
 .navbar.navbar-default .navbar-banner:before {
-  background: url("./media/global-header-bg.svg"), linear-gradient(to right, #183357, #d9b337);
+  background: url("/media/global-header-bg.svg"), linear-gradient(to right, #183357, #d9b337);
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
@@ -718,7 +718,7 @@ a.prettyinpink {
 .navbar.navbar-inverted .navbar-nav.container {
   padding-left: 15px; }
 .navbar.navbar-inverted .navbar-nav:before {
-  background: url("./media/global-header-bg.svg"), linear-gradient(to right, #183357, #d9b337);
+  background: url("/media/global-header-bg.svg"), linear-gradient(to right, #183357, #d9b337);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -818,6 +818,12 @@ form {
   src: url("media/fonts/proximanova-bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
+.navbar-inverted .navbar-nav:before {
+  background: url("media/global-header-bg.svg"); }
+
+.navbar-default .navbar-banner:before {
+  background: url("media/global-header-bg.svg"); }
+
 .swatches pre {
   overflow: visible !important; }
   .swatches pre > code {
