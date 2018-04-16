@@ -720,18 +720,22 @@ a.prettyinpink {
   border-color: rgba(0, 0, 0, 0.1); }
   .navbar.navbar-inverted .navbar-toggler .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
-.navbar.navbar-inverted .navbar-row:before {
-  background: url("/media/global-header-bg.svg"), linear-gradient(to right, #183357, #d9b337);
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
-  position: absolute;
-  width: 100%;
-  content: "";
-  top: 0;
-  left: 0;
-  z-index: -1;
-  height: 100%; }
+.navbar.navbar-inverted .navbar-banner {
+  color: #002855; }
+.navbar.navbar-inverted .navbar-row {
+  color: white; }
+  .navbar.navbar-inverted .navbar-row:before {
+    background: url("/media/global-header-bg.svg"), linear-gradient(to right, #183357, #d9b337);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    content: "";
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%; }
 .navbar.navbar-inverted .navbar-nav {
   color: white; }
   .navbar.navbar-inverted .navbar-nav .nav-link:hover:not(.disabled):not(:disabled) {
