@@ -37,6 +37,7 @@
             display: inline-flex;
             position: relative;
             width: 100%;
+            box-shadow: 0 2px 1px rgba(0,40,85,0.15);
             .nav-item {
                 .nav-link, &.nav-link {
                     padding: 1em 1.5em;

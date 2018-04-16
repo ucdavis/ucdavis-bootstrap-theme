@@ -607,7 +607,8 @@ a.prettyinpink {
   .navbar.navbar-default .navbar-nav, .navbar.navbar-inverted .navbar-nav {
     display: inline-flex;
     position: relative;
-    width: 100%; }
+    width: 100%;
+    box-shadow: 0 2px 1px rgba(0, 40, 85, 0.15); }
     .navbar.navbar-default .navbar-nav .nav-item .nav-link, .navbar.navbar-default .navbar-nav .nav-item.nav-link, .navbar.navbar-inverted .navbar-nav .nav-item .nav-link, .navbar.navbar-inverted .navbar-nav .nav-item.nav-link {
       padding: 1em 1.5em; }
     .navbar.navbar-default .navbar-nav .dropdown, .navbar.navbar-inverted .navbar-nav .dropdown {
