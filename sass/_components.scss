@@ -24,6 +24,12 @@ form {
         color: $ucdavis-blue;
         font-weight:600;
     }
+    .form-control {
+        &:focus {
+            border-color: $ucdavis-gold;
+            box-shadow: 0 0.02rem 0 .1rem desaturate(lighten($ucdavis-gold, 20%), 40%);
+        }
+    }
 }
 .list-group {
     .list-group-item {

@@ -762,6 +762,9 @@ form {
   form legend {
     color: #002855;
     font-weight: 600; }
+  form .form-control:focus {
+    border-color: #c99700;
+    box-shadow: 0 0.02rem 0 0.1rem #d6b759; }
 
 .list-group .list-group-item {
   border-color: rgba(0, 0, 0, 0.1);
