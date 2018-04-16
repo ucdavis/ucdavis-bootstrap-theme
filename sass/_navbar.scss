@@ -36,11 +36,13 @@
         
             }
         }
+        .navbar-row {
+            width: 100%;
+            position: relative;
+            box-shadow: 0 2px 1px rgba(0,40,85,0.15);
+        }
         .navbar-nav {
             display: inline-flex;
-            position: relative;
-            width: 100%;
-            box-shadow: 0 2px 1px rgba(0,40,85,0.15);
             .nav-item {
                 .nav-link, &.nav-link {
                     padding: 1em 1.5em;
@@ -124,17 +126,21 @@
             }
             color: white;
         }
+        .navbar-row {
+            color: $ucdavis-blue;
+        }
         .navbar-nav {
             background-color: white;
             color: $ucdavis-blue;
             .nav-item {
-                &.active, &:active {
-                    .nav-link {
-                        background-color: desaturate(lighten($ucdavis-gold, 40%),20%);
-                    }
+                &.active:not(.disabled):not(:disabled), &:active:not(.disabled):not(:disabled) {
+                    background-color: desaturate(lighten($ucdavis-gold, 40%),20%);
                 }
                 .nav-link, &.nav-link {
-                    &:hover {
+                    &.active:not(.disabled):not(:disabled), &:active:not(.disabled):not(:disabled) {
+                        background-color: desaturate(lighten($ucdavis-gold, 40%),20%);
+                    }
+                    &:hover:not(.disabled):not(:disabled) {
                         background-color: $ucdavis-gold;
                     }
                 }
@@ -173,11 +179,7 @@
                 background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
             }
         }
-        .navbar-nav {
-            color: white;
-            &.container {
-                padding-left: 15px;
-            }
+        .navbar-row {
             &:before{
                 background: url("/media/global-header-bg.svg"),
                 linear-gradient(to right, #183357, #d9b337);
@@ -192,8 +194,12 @@
                 z-index: -1;
                 height: 100%;
             }
+        }
+        .navbar-nav {
+            color: white;
+           
             .nav-link {
-                &:hover {
+                &:hover:not(.disabled):not(:disabled) {
                     background-color: rgba(255, 255, 255, 0.2);
                 }
             }
