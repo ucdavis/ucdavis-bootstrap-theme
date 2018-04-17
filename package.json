@@ -1,0 +1,33 @@
+{
+  "name": "ucdavis-bootstrap-theme",
+  "version": "1.0.0",
+  "description": "This is a stylesheet that styles over bootstrap to incorporate UC Davis branding with relevant assets",
+  "main": "ucdavis.css",
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "gulp-rename": "^1.2.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ucdavis/ucdavis-bootstrap-theme.git"
+  },
+  "keywords": [
+    "bootstrap",
+    "css",
+    "ucdavis"
+  ],
+  "author": "Kaelan Mikowicz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ucdavis/ucdavis-bootstrap-theme/issues"
+  },
+  "homepage": "https://github.com/ucdavis/ucdavis-bootstrap-theme#readme"
+}
