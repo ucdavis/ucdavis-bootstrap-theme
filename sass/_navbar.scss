@@ -40,10 +40,10 @@
             width: 100%;
             position: relative;
             box-shadow: 0 2px 1px rgba(0,40,85,0.15);
-            padding: 0 1rem;
         }
         .navbar-nav {
             display: inline-flex;
+            width: 100%;
             .nav-item {
                 .nav-link, &.nav-link {
                     padding: 1em 1.5em;
@@ -71,14 +71,10 @@
                         position: static;
                         padding-top: 0;
                         border: none;
-                        display: block;
-                        visibility: collapse;
-                        transition: visibility 0.55s ease-in-out;
-                    }
-                }
-                &:hover, &.show, &.collapsing {
-                    .dropdown-menu {
-                        visibility: visible;
+                        display: none;
+                        &.show, &.collapsing {
+                            display: block;
+                        }
                     }
                 }
             }
@@ -91,10 +87,17 @@
         
             &#{$infix} {
                 @include media-breakpoint-up($next) {
+                    .navbar-row {
+                        padding: 0 1rem;
+                    }
                     .navbar-tabs {
                         max-height: 3.5em;
-                        .dropdown-menu {                
-                            transition: visibility 0.55s ease-in-out;
+                        .dropdown {
+                            .dropdown-menu {                
+                                transition: visibility 0.55s ease-in-out;
+                                visibility: collapse;
+                                display: block !important;
+                            }
                         }
                         &:hover, &.show, &.collapsing {
                             max-height: 600px;
@@ -135,7 +138,9 @@
             color: $ucdavis-blue;
             .nav-item {
                 &.active:not(.disabled):not(:disabled), &:active:not(.disabled):not(:disabled) {
-                    background-color: desaturate(lighten($ucdavis-gold, 40%),20%);
+                    .nav-link {
+                        background-color: desaturate(lighten($ucdavis-gold, 40%),20%);
+                    }
                 }
                 .nav-link, &.nav-link {
                     &.active:not(.disabled):not(:disabled), &:active:not(.disabled):not(:disabled) {
