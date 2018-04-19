@@ -3,19 +3,16 @@
   src: url("/media/fonts/proximanova-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
-
 @font-face {
   font-family: 'proxima-nova-i';
   src: url("/media/fonts/proximanova-regularit-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
-
 @font-face {
   font-family: 'proxima-nova-b';
   src: url("/media/fonts/proximanova-bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
-
 html {
   font-size: 16px; }
   @media (max-width: 991.98px) {
@@ -582,7 +579,17 @@ a.prettyinpink {
 
 .navbar a {
   color: inherit; }
-
+.navbar .navbar-nav.navbar-tabs {
+  overflow-y: hidden;
+  height: auto;
+  transition: max-height 0.5s ease-in-out; }
+  .navbar .navbar-nav.navbar-tabs .dropdown .dropdown-menu {
+    position: static;
+    padding-top: 0;
+    border: none;
+    display: none; }
+    .navbar .navbar-nav.navbar-tabs .dropdown .dropdown-menu.show, .navbar .navbar-nav.navbar-tabs .dropdown .dropdown-menu.collapsing {
+      display: block; }
 .navbar.navbar-default, .navbar.navbar-inverted {
   padding: 0;
   flex-wrap: wrap;
@@ -627,18 +634,6 @@ a.prettyinpink {
         border-radius: 0; }
       .navbar.navbar-default .navbar-nav .dropdown .dropdown-item a, .navbar.navbar-inverted .navbar-nav .dropdown .dropdown-item a {
         text-decoration: none; }
-    .navbar.navbar-default .navbar-nav.navbar-tabs, .navbar.navbar-inverted .navbar-nav.navbar-tabs {
-      overflow-y: hidden;
-      height: auto;
-      transition: max-height 0.5s ease-in-out; }
-      .navbar.navbar-default .navbar-nav.navbar-tabs .dropdown .dropdown-menu, .navbar.navbar-inverted .navbar-nav.navbar-tabs .dropdown .dropdown-menu {
-        position: static;
-        padding-top: 0;
-        border: none;
-        display: none; }
-        .navbar.navbar-default .navbar-nav.navbar-tabs .dropdown .dropdown-menu.show, .navbar.navbar-default .navbar-nav.navbar-tabs .dropdown .dropdown-menu.collapsing, .navbar.navbar-inverted .navbar-nav.navbar-tabs .dropdown .dropdown-menu.show, .navbar.navbar-inverted .navbar-nav.navbar-tabs .dropdown .dropdown-menu.collapsing {
-          display: block; }
-
 @media (min-width: 576px) {
   .navbar.navbar-expand-sm .navbar-row {
     padding: 0 1rem; }
@@ -652,7 +647,6 @@ a.prettyinpink {
       max-height: 600px; }
       .navbar.navbar-expand-sm .navbar-tabs:hover .dropdown-menu, .navbar.navbar-expand-sm .navbar-tabs.show .dropdown-menu, .navbar.navbar-expand-sm .navbar-tabs.collapsing .dropdown-menu {
         visibility: visible; } }
-
 @media (min-width: 768px) {
   .navbar.navbar-expand-md .navbar-row {
     padding: 0 1rem; }
@@ -666,7 +660,6 @@ a.prettyinpink {
       max-height: 600px; }
       .navbar.navbar-expand-md .navbar-tabs:hover .dropdown-menu, .navbar.navbar-expand-md .navbar-tabs.show .dropdown-menu, .navbar.navbar-expand-md .navbar-tabs.collapsing .dropdown-menu {
         visibility: visible; } }
-
 @media (min-width: 992px) {
   .navbar.navbar-expand-lg .navbar-row {
     padding: 0 1rem; }
@@ -680,7 +673,6 @@ a.prettyinpink {
       max-height: 600px; }
       .navbar.navbar-expand-lg .navbar-tabs:hover .dropdown-menu, .navbar.navbar-expand-lg .navbar-tabs.show .dropdown-menu, .navbar.navbar-expand-lg .navbar-tabs.collapsing .dropdown-menu {
         visibility: visible; } }
-
 @media (min-width: 1200px) {
   .navbar.navbar-expand-xl .navbar-row {
     padding: 0 1rem; }
@@ -694,10 +686,8 @@ a.prettyinpink {
       max-height: 600px; }
       .navbar.navbar-expand-xl .navbar-tabs:hover .dropdown-menu, .navbar.navbar-expand-xl .navbar-tabs.show .dropdown-menu, .navbar.navbar-expand-xl .navbar-tabs.collapsing .dropdown-menu {
         visibility: visible; } }
-
 .navbar.navbar-expand .navbar-row {
   padding: 0 1rem; }
-
 .navbar.navbar-expand .navbar-tabs {
   max-height: 3.5em; }
   .navbar.navbar-expand .navbar-tabs .dropdown .dropdown-menu {
@@ -708,10 +698,8 @@ a.prettyinpink {
     max-height: 600px; }
     .navbar.navbar-expand .navbar-tabs:hover .dropdown-menu, .navbar.navbar-expand .navbar-tabs.show .dropdown-menu, .navbar.navbar-expand .navbar-tabs.collapsing .dropdown-menu {
       visibility: visible; }
-
 .navbar.navbar-default .navbar-toggler > .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
-
 .navbar.navbar-default .navbar-banner {
   color: white; }
   .navbar.navbar-default .navbar-banner:before {
@@ -725,10 +713,8 @@ a.prettyinpink {
     left: 0;
     z-index: -1;
     height: 100%; }
-
 .navbar.navbar-default .navbar-row {
   color: #002855; }
-
 .navbar.navbar-default .navbar-nav {
   background-color: white;
   color: #002855; }
@@ -748,16 +734,13 @@ a.prettyinpink {
     background-color: #c99700; }
   .navbar.navbar-default .navbar-nav .dropdown .dropdown-item a {
     color: #002855; }
-
 .navbar.navbar-inverted .navbar-toggler {
   color: rgba(0, 0, 0, 0.5);
   border-color: rgba(0, 0, 0, 0.1); }
   .navbar.navbar-inverted .navbar-toggler .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
-
 .navbar.navbar-inverted .navbar-banner {
   color: #002855; }
-
 .navbar.navbar-inverted .navbar-row {
   color: white; }
   .navbar.navbar-inverted .navbar-row:before {
@@ -772,7 +755,6 @@ a.prettyinpink {
     left: 0;
     z-index: -1;
     height: 100%; }
-
 .navbar.navbar-inverted .navbar-nav {
   color: white; }
   .navbar.navbar-inverted .navbar-nav .nav-link:hover:not(.disabled):not(:disabled) {
@@ -852,19 +834,16 @@ form {
   src: url("media/fonts/proximanova-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
-
 @font-face {
   font-family: 'proxima-nova-i';
   src: url("media/fonts/proximanova-regularit-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
-
 @font-face {
   font-family: 'proxima-nova-b';
   src: url("media/fonts/proximanova-bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
-
 .navbar-inverted .navbar-nav:before {
   background: url("media/global-header-bg.svg") !important; }
 

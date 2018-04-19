@@ -2,6 +2,22 @@
     a {
         color: inherit;
     }
+    .navbar-nav.navbar-tabs {
+        overflow-y: hidden;
+        height: auto;
+        transition: max-height 0.5s ease-in-out;
+        .dropdown {
+            .dropdown-menu {
+                position: static;
+                padding-top: 0;
+                border: none;
+                display: none;
+                &.show, &.collapsing {
+                    display: block;
+                }
+            }
+        }
+    }
     &.navbar-default, &.navbar-inverted {
         padding: 0;
         flex-wrap: wrap;
@@ -59,22 +75,6 @@
                 .dropdown-item {
                     a {
                         text-decoration: none;
-                    }
-                }
-            }
-            &.navbar-tabs {
-                overflow-y: hidden;
-                height: auto;
-                transition: max-height 0.5s ease-in-out;
-                .dropdown {
-                    .dropdown-menu {
-                        position: static;
-                        padding-top: 0;
-                        border: none;
-                        display: none;
-                        &.show, &.collapsing {
-                            display: block;
-                        }
                     }
                 }
             }
