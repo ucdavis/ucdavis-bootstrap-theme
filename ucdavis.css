@@ -1,18 +1,18 @@
 @font-face {
   font-family: 'proxima-nova-r';
-  src: url("/media/fonts/proximanova-regular-webfont.woff") format("woff");
+  src: url("https://ucdcdn.azureedge.net/public/media/fonts/proximanova-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'proxima-nova-i';
-  src: url("/media/fonts/proximanova-regularit-webfont.woff") format("woff");
+  src: url("https://ucdcdn.azureedge.net/public/media/fonts/proximanova-regularit-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'proxima-nova-b';
-  src: url("/media/fonts/proximanova-bold-webfont.woff") format("woff");
+  src: url("https://ucdcdn.azureedge.net/public/media/fonts/proximanova-bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
@@ -583,6 +583,18 @@ a.prettyinpink {
 .navbar a {
   color: inherit; }
 
+.navbar .navbar-nav.navbar-tabs {
+  overflow-y: hidden;
+  height: auto;
+  transition: max-height 0.5s ease-in-out; }
+  .navbar .navbar-nav.navbar-tabs .dropdown .dropdown-menu {
+    position: static;
+    padding-top: 0;
+    border: none;
+    display: none; }
+    .navbar .navbar-nav.navbar-tabs .dropdown .dropdown-menu.show, .navbar .navbar-nav.navbar-tabs .dropdown .dropdown-menu.collapsing {
+      display: block; }
+
 .navbar.navbar-default, .navbar.navbar-inverted {
   padding: 0;
   flex-wrap: wrap;
@@ -627,17 +639,6 @@ a.prettyinpink {
         border-radius: 0; }
       .navbar.navbar-default .navbar-nav .dropdown .dropdown-item a, .navbar.navbar-inverted .navbar-nav .dropdown .dropdown-item a {
         text-decoration: none; }
-    .navbar.navbar-default .navbar-nav.navbar-tabs, .navbar.navbar-inverted .navbar-nav.navbar-tabs {
-      overflow-y: hidden;
-      height: auto;
-      transition: max-height 0.5s ease-in-out; }
-      .navbar.navbar-default .navbar-nav.navbar-tabs .dropdown .dropdown-menu, .navbar.navbar-inverted .navbar-nav.navbar-tabs .dropdown .dropdown-menu {
-        position: static;
-        padding-top: 0;
-        border: none;
-        display: none; }
-        .navbar.navbar-default .navbar-nav.navbar-tabs .dropdown .dropdown-menu.show, .navbar.navbar-default .navbar-nav.navbar-tabs .dropdown .dropdown-menu.collapsing, .navbar.navbar-inverted .navbar-nav.navbar-tabs .dropdown .dropdown-menu.show, .navbar.navbar-inverted .navbar-nav.navbar-tabs .dropdown .dropdown-menu.collapsing {
-          display: block; }
 
 @media (min-width: 576px) {
   .navbar.navbar-expand-sm .navbar-row {
@@ -715,7 +716,7 @@ a.prettyinpink {
 .navbar.navbar-default .navbar-banner {
   color: white; }
   .navbar.navbar-default .navbar-banner:before {
-    background: url("/media/global-header-bg.svg"), linear-gradient(to right, #183357, #d9b337);
+    background: url("https://ucdcdn.azureedge.net/public/media/global-header-bg.svg"), linear-gradient(to right, #183357, #d9b337);
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
@@ -761,7 +762,7 @@ a.prettyinpink {
 .navbar.navbar-inverted .navbar-row {
   color: white; }
   .navbar.navbar-inverted .navbar-row:before {
-    background: url("/media/global-header-bg.svg"), linear-gradient(to right, #183357, #d9b337);
+    background: url("https://ucdcdn.azureedge.net/public/media/global-header-bg.svg"), linear-gradient(to right, #183357, #d9b337);
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;

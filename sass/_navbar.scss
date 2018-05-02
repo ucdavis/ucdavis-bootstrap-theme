@@ -2,6 +2,22 @@
     a {
         color: inherit;
     }
+    .navbar-nav.navbar-tabs {
+        overflow-y: hidden;
+        height: auto;
+        transition: max-height 0.5s ease-in-out;
+        .dropdown {
+            .dropdown-menu {
+                position: static;
+                padding-top: 0;
+                border: none;
+                display: none;
+                &.show, &.collapsing {
+                    display: block;
+                }
+            }
+        }
+    }
     &.navbar-default, &.navbar-inverted {
         padding: 0;
         flex-wrap: wrap;
@@ -62,22 +78,6 @@
                     }
                 }
             }
-            &.navbar-tabs {
-                overflow-y: hidden;
-                height: auto;
-                transition: max-height 0.5s ease-in-out;
-                .dropdown {
-                    .dropdown-menu {
-                        position: static;
-                        padding-top: 0;
-                        border: none;
-                        display: none;
-                        &.show, &.collapsing {
-                            display: block;
-                        }
-                    }
-                }
-            }
         }
     }
     &.navbar-expand {
@@ -116,7 +116,7 @@
         }
         .navbar-banner {
             &:before{
-                background: url("/media/global-header-bg.svg"),
+                background: url("https://ucdcdn.azureedge.net/public/media/global-header-bg.svg"),
                 linear-gradient(to right, #183357, #d9b337);
                 background-repeat: no-repeat;
                 background-size: cover;
@@ -190,7 +190,7 @@
         }
         .navbar-row {
             &:before{
-                background: url("/media/global-header-bg.svg"),
+                background: url("https://ucdcdn.azureedge.net/public/media/global-header-bg.svg"),
                 linear-gradient(to right, #183357, #d9b337);
                 background-repeat: no-repeat;
                 background-position: center top;
