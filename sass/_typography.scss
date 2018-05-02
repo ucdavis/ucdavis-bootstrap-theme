@@ -8,11 +8,12 @@ html {
     }
 }
 body {
-	font-family:$sans-serif;
+	font-family: $sans-serif;
 }
 h1, h2, h3, h4, h5, h6 {
 	color:$ucdavis-blue;
-	font-family:$sans-bold;
+    font-family: $sans-serif;
+    font-weight: bold;
 }
 h1, .h1, h2, .h2, h3, .h3 {
 	margin-top:1rem;
@@ -31,7 +32,7 @@ h4 {
 	font-size:1.6rem;
 }
 p {
-	font-family:$sans-serif;
+	font-family: $sans-serif;
 	line-height:1.625;
     letter-spacing:.025rem;
     color: $primary-font;
@@ -43,7 +44,8 @@ label {
 	font-weight:500;
 }
 .lead {
-    font-family: $sans-bold;
+    font-family: $sans-serif;
+    font-weight: bold;
 }
 .jumbotron h1, .jumbotron .h1 {
 	font-size:5rem;

@@ -1,6 +1,9 @@
-@import "ucdavis";
 @import "githubStyles";
-@mixin swatch-color($name, $color) {
+@import "dependencies";
+@import "layout";
+@import "typography";
+@import "alerts";
+@import "components";@mixin swatch-color($name, $color) {
     &.#{$name} {
         background-color: $color;
     }

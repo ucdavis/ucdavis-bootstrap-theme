@@ -1,32 +1,8 @@
 @import "mixins/colors";
 @import "variables";
-@font-face {
-	font-family: 'proxima-nova-r';
-	src: url('https://ucdcdn.azureedge.net/public/media/fonts/proximanova-regular-webfont.woff') format('woff');
-	font-weight: normal; 
-	font-style: normal;
- }
- 
- @font-face {
-	font-family: 'proxima-nova-i';
-	src: url('https://ucdcdn.azureedge.net/public/media/fonts/proximanova-regularit-webfont.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
- }
-
- @font-face {
-	font-family: 'proxima-nova-b';
-	src: url('https://ucdcdn.azureedge.net/public/media/fonts/proximanova-bold-webfont.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
- }
-
- $sans-italic:   "proxima-nova-i",serif;
- $sans-bold:     "proxima-nova-b",serif;
- $sans-reg:      "proxima-nova-r",serif;
 // Typography
 	$futura:			"futura-pt", Futura Std, Futura, Arial, sans-serif;
-	$sans-serif:		"proxima-nova-r", Lucida Grande, Lucida Sans, Helvetica Neue, Helvetica Std, Helvetica, Univers, Arial, sans-serif;
+	$sans-serif:		"proxima-nova", Lucida Grande, Lucida Sans, Helvetica Neue, Helvetica Std, Helvetica, Univers, Arial, sans-serif;
 	$serif:				Georgia, Berkeley, serif;
 
 	$primary-font: rgba(67,67,67,.99);
