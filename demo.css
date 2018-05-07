@@ -1,18 +1,18 @@
 @font-face {
   font-family: 'proxima-nova';
-  src: url("https://ucdcdn.blob.core.windows.net/public/media/fonts/proximanova-regular-webfont.woff") format("woff");
+  src: url("media/fonts/proximanova-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'proxima-nova';
-  src: url("https://ucdcdn.blob.core.windows.net/public/media/fonts/proximanova-regularit-webfont.woff") format("woff");
+  src: url("media/fonts/proximanova-regularit-webfont.woff") format("woff");
   font-weight: normal;
   font-style: italic; }
 
 @font-face {
   font-family: 'proxima-nova';
-  src: url("https://ucdcdn.blob.core.windows.net/public/media/fonts/proximanova-bold-webfont.woff") format("woff");
+  src: url("media/fonts/proximanova-bold-webfont.woff") format("woff");
   font-weight: bold;
   font-style: normal; }
 
