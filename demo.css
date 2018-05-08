@@ -925,4 +925,8 @@ section {
 button {
   margin: 5px; }
 
+#sidebar {
+  top: 25px;
+  height: 1px; }
+
 /*# sourceMappingURL=demo.css.map */
